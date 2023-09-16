@@ -44,7 +44,7 @@ public class TC_002_VerifyHomeLoginWithCredentials extends BaseClass
 		boolean status = compareScreenshots(driver, screenshotFile, "DashboardESC");
 		if (status == true)
 		{
-			System.out.println("Dashboard Screenshot is not same");
+			System.out.println("Dashboard Screenshot is not same as expected");
 			softAssert.assertFalse(status);
 		}
 		else

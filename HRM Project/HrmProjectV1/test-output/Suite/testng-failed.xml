@@ -3,6 +3,34 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="HrmTest(failed)">
     <classes>
+      <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
+        <methods>
+          <include name="validPasswordAttempt"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
+      <class name="com.hrm.testcases.TC_004_FieldLevelValidations">
+        <methods>
+          <include name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum"/>
+          <include name="verfyAddUserUsernameFieldForOnlyAlphaNumeric"/>
+          <include name="verifyLoginWithTwoWrongAttempts"/>
+          <include name="verifyAddUserUsernameFieldValueLimit"/>
+          <include name="setup"/>
+          <include name="validatingAddUserWhenUserameFieldIsEmpty"/>
+          <include name="tearDown"/>
+          <include name="validatingAddUserWhenEmployeeNameFieldIsEmpty"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.TC_004_FieldLevelValidations -->
+      <class name="com.hrm.testcases.TC_003_VerifyAdminModule">
+        <methods>
+          <include name="verifyNonExistingEmployeeNameRecords"/>
+          <include name="verifyByAddingNewDuplicateUsername"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="compareAddUserScreenshot"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.TC_003_VerifyAdminModule -->
       <class name="com.hrm.testcases.TC_001_VerifyHomePage">
         <methods>
           <include name="setup"/>

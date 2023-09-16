@@ -119,7 +119,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	}
 	
 	@Test
-	void verifyUserRoleForUserRoleAdmin() throws InterruptedException //Here We verify that the results shown on choosing Admin user role contains only Admin user role entries
+	void verifyResultsForUserRoleAdmin() throws InterruptedException //Here We verify that the results shown on choosing Admin user role contains only Admin user role entries
 	{
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);

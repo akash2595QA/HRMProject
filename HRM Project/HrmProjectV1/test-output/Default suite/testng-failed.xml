@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrm.testcases.TC_004_FieldLevelValidations">
+      <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
         <methods>
+          <include name="validPasswordAttempt"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="validatingAddUserWhenEmployeeNameFieldIsEmpty"/>
         </methods>
-      </class> <!-- com.hrm.testcases.TC_004_FieldLevelValidations -->
+      </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
