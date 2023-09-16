@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="2" name="HrmTest" parallel="methods">
+    <classes>
+     <class name="com.hrm.baseclass.BaseClass"/> 
+  <!--    <class name="com.hrm.testcases.TC_003_VerifyAdminModule"/> -->
+      <class name="com.hrm.testcases.TC_005_VerifyLogoutModule"/>
+ 		<class name="TC_002_VerifyHomeLoginWithCredentials"/>
+      <class name="com.hrm.testcases.TC_001_VerifyHomePage"/> 
+      <!--      <class name="com.hrm.testcases.TC_004_FieldLevelValidations"/>        -->     
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
