@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="HrmTest1">
+	<test thread-count="1" name="HrmTest1">
 		<classes>
-			<class name="com.hrm.baseclass.BaseClass" />
+	<!--		<class name="com.hrm.baseclass.BaseClass" /> -->
+			<class name="com.hrm.testcases.TC_001_VerifyHomePage" />
+			<class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials" />
 			<class name="com.hrm.testcases.TC_003_VerifyAdminModule">
 				<methods>
 					<include name="deleteUser"></include>
@@ -22,11 +24,8 @@
 					<include name="verifyByAddingNewDuplicateUsername"></include>
 				</methods>
 			</class>
-			<class name="com.hrm.testcases.TC_005_VerifyLogoutModule" />
-			<class
-				name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials" />
-			<class name="com.hrm.testcases.TC_001_VerifyHomePage" />
 			<class name="com.hrm.testcases.TC_004_FieldLevelValidations" />
+			<class name="com.hrm.testcases.TC_005_VerifyLogoutModule" />						
 			<class name="com.hrm.testcases.TC_007_VerifyDashboardModule"/>
 		</classes>
 	</test> <!--
@@ -34,9 +33,8 @@
 
 	<test name="HrmTest2">
 		<classes>
-			<class name="com.hrm.baseclass.BaseClassDD" />
-			<class
-				name="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts" />
+		<!--	<class name="com.hrm.baseclass.BaseClassDD" />  -->
+			<class name="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts" />
 		</classes>
 	</test>
 

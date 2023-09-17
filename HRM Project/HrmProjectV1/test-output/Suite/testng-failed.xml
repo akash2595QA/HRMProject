@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="HrmTest(failed)">
+  <test thread-count="5" name="HrmTest1(failed)">
     <classes>
-      <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
-        <methods>
-          <include name="validPasswordAttempt"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
-      <class name="com.hrm.testcases.TC_004_FieldLevelValidations">
-        <methods>
-          <include name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum"/>
-          <include name="verfyAddUserUsernameFieldForOnlyAlphaNumeric"/>
-          <include name="verifyLoginWithTwoWrongAttempts"/>
-          <include name="verifyAddUserUsernameFieldValueLimit"/>
-          <include name="setup"/>
-          <include name="validatingAddUserWhenUserameFieldIsEmpty"/>
-          <include name="tearDown"/>
-          <include name="validatingAddUserWhenEmployeeNameFieldIsEmpty"/>
-        </methods>
-      </class> <!-- com.hrm.testcases.TC_004_FieldLevelValidations -->
       <class name="com.hrm.testcases.TC_003_VerifyAdminModule">
         <methods>
           <include name="verifyNonExistingEmployeeNameRecords"/>
@@ -31,6 +12,18 @@
           <include name="compareAddUserScreenshot"/>
         </methods>
       </class> <!-- com.hrm.testcases.TC_003_VerifyAdminModule -->
+      <class name="com.hrm.testcases.TC_004_FieldLevelValidations">
+        <methods>
+          <include name="verfyAddUserUsernameFieldForOnlyAlphaNumeric"/>
+          <include name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum"/>
+          <include name="verifyLoginWithTwoWrongAttempts"/>
+          <include name="verifyAddUserUsernameFieldValueLimit"/>
+          <include name="validatingAddUserWhenUserameFieldIsEmpty"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validatingAddUserWhenEmployeeNameFieldIsEmpty"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.TC_004_FieldLevelValidations -->
       <class name="com.hrm.testcases.TC_001_VerifyHomePage">
         <methods>
           <include name="setup"/>
@@ -38,6 +31,24 @@
           <include name="compareHomePageScreenshot"/>
         </methods>
       </class> <!-- com.hrm.testcases.TC_001_VerifyHomePage -->
+      <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
+        <methods>
+          <include name="validPasswordAttempt"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
     </classes>
-  </test> <!-- HrmTest(failed) -->
+  </test> <!-- HrmTest1(failed) -->
+  <test thread-count="5" name="HrmTest2(failed)">
+    <classes>
+      <class name="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithThreeWrongAttempts" invocation-numbers="0 1 2"/>
+          <include name="setupBeforeTest"/>
+        </methods>
+      </class> <!-- com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts -->
+    </classes>
+  </test> <!-- HrmTest2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

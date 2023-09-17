@@ -10,6 +10,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.hrm.baseclass.BaseClassDD;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.github.javafaker.Faker;
 import com.hrm.pages.AdminPage;
 import com.hrm.pages.HomePage;
@@ -33,11 +34,14 @@ public class TC_006_DataDrivenTestingFor3FailedAttempts extends BaseClassDD
 		{
 			Log.info("Correct error message for three failed attempts is printed");
 			softAssert.assertTrue(true);
+			extentTest.pass("Correct error message for three failed attempts is printed");
 		}
 		else
 		{
 			Log.error("Expected error message for three failed attempts is not printed");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Expected error message for three failed attempts is not printed").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		softAssert.assertAll();
 	}

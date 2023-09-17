@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+
 import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
@@ -29,10 +30,15 @@ import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 import org.openqa.selenium.chrome.ChromeOptions;
 import com.hrm.utilities.Log;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 
 public class BaseClass 
 
 {
+
 	public static WebDriver driver;
 	ReadConfig readConfig = new ReadConfig();
 	public SoftAssert softAssert = new SoftAssert();
@@ -43,9 +49,23 @@ public class BaseClass
 	String pageUrl = readConfig.getPageUrl();
 	String browserName = readConfig.getBrowserName();
 	
+	//Extent Report
+	protected static ExtentReports extent;
+	protected ExtentTest extentTest;
+	
+	static
+	{
+		extent = new ExtentReports();
+		File file = new File("extent-report.html");
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
+		extent.attachReporter(sparkReporter);
+		Log.info("Completed  ExtentReport Setup");
+	}
+	
 	@BeforeMethod
 	public void setup() throws InterruptedException
 	{
+		
 		if (browserName.equalsIgnoreCase("chrome"))
 		{
 			Log.info("Entered Chrome browser setup");
@@ -174,6 +194,14 @@ public class BaseClass
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 	
+	// This returns Base64 of the screenshot
+	public static String screenShotCapture() {
+		Log.info("Capturing Base64 sceenshot");
+		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
+		String base64Code = takeScreenshot.getScreenshotAs(OutputType.BASE64);
+		return base64Code;
+	}
+	
 	
 	@AfterMethod
 	public void tearDown()
@@ -186,8 +214,11 @@ public class BaseClass
 			{		
 				e.printStackTrace();
 			}
-		driver.close();
+		
 		Log.info("Browser Closed");
+		extent.flush();
+		driver.close();
+
 	}
 	
 }

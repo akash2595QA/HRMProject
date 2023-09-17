@@ -61,4 +61,9 @@ public class HomePage
 	{
 		return loginFalureMessage.getText();
 	}
+	
+	public WebElement elementLoginfailureMsg()
+	{
+		return loginFalureMessage;
+	}
 }

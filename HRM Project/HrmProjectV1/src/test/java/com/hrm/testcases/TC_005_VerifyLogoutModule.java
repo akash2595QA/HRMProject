@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.github.javafaker.Faker;
 import com.hrm.pages.AdminPage;
 import com.hrm.pages.HomePage;
@@ -18,6 +19,7 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 	@Test
 	void verifyContentsOfTheUserProfileBtn() throws InterruptedException
 	{
+		extentTest = extent.createTest("User Profile - menu", "Verify contents on clicking User profile option");
 		Log.info("Scenario: To verify contents on clicking User profile option");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -36,11 +38,14 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 		{
 			Log.error("The User Profile dropdown does not contain all or some of these options {\"About\", \"Support\", \"Change Password\", \"Logout\"}");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("The User Profile dropdown does not contain all or some of these options {\"About\", \"Support\", \"Change Password\", \"Logout\"}").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		else
 		{
 			Log.info("The User dropdown contains all the expected options");
 			softAssert.assertTrue(true);
+			extentTest.pass("The User dropdown contains all the expected options");
 		}
 		softAssert.assertAll();
 		
@@ -49,6 +54,7 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 	@Test
 	void verifyLogout() throws InterruptedException
 	{
+		extentTest = extent.createTest("Logout button", "verify that the logout function works correctly");
 		Log.info("Scenario: To verify that the logout function works correctly");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -69,12 +75,15 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 		if(actualPageUrlAfterLogout.equals(expectedPageUrlAfterLogout))
 		{
 			Log.info("Successfully logged out");
-			softAssert.assertTrue(true);			
+			softAssert.assertTrue(true);	
+			extentTest.pass("Successfully logged out");
 		}
 		else
 		{
 			Log.error("Unsuccessfull logout");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Unsuccessfull logout").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		softAssert.assertAll();
 	}

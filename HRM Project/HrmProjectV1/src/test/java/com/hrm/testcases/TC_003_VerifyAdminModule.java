@@ -1,6 +1,7 @@
 package com.hrm.testcases;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.github.javafaker.Faker;
 import com.hrm.baseclass.*;
 import com.hrm.pages.*;
@@ -24,6 +25,8 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyAdminPageContents() throws InterruptedException
 	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		extentTest = extent.createTest("AdminPage - Tabs", "Verify approriate tabs are present on the Admin page");
 		Log.info("Scenario: To verify approriate tabs are present on the Admin page");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -31,7 +34,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.setUsername(validUsername);
 		hm.setLoginPass(validPassword);
 		hm.clickLogin();
-		Thread.sleep(2000);
+		wait.until(ExpectedConditions.elementToBeClickable(ad.elementAdmin()));
 		ad.clickAdmin();
 		Thread.sleep(2000);
 		String[] strArr = {"User Management", "Job", "Organization", "Qualifications", "Nationalities", "Corporate Branding", "Configuration"};
@@ -40,11 +43,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.info("Admin module contains all the features");
 			softAssert.assertTrue(true);
+			extentTest.pass("Admin module contains all the features");
 		}
 		else
 		{
 			Log.error("Admin module does not contain all the features");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Admin module does not contain all the features").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());			
 		}
 		
 		softAssert.assertAll();
@@ -53,6 +59,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifySearchResultWithExistingUsername() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Search Existing Username", "Verify search results for existing username search");
 		Log.info("Scenario: To verify search results for existing username search");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -75,11 +82,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			softAssert.assertTrue(true);
 			Log.info("Correct search results are displayed");
+			extentTest.pass("Correct search results are displayed");
 		}
 		else
 		{
 			softAssert.assertTrue(false);
 			Log.error("Incorrect search results are displayed");
+			String base64Code = screenShotCapture();
+			extentTest.fail("Incorrect search results are displayed").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 			softAssert.assertAll();		
 	}
@@ -87,6 +97,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyUserRoleOptions() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Verify options in User role", "Verify the options present in User Role drop down menu");
 		Log.info("Scenario: To verify the options present in User Role drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -117,11 +128,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			softAssert.assertTrue(true);
 			Log.info("Both the options are present");
+			extentTest.pass("Both the options are present");
 		}
 		else
 		{
 			softAssert.assertTrue(false);
 			Log.error("Options are not present");
+			String base64Code = screenShotCapture();
+			extentTest.fail("Options are not present").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		softAssert.assertAll();
 	}
@@ -129,6 +143,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForUserRoleAdmin() throws InterruptedException //Here We verify that the results shown on choosing Admin user role contains only Admin user role entries
 	{
+		extentTest = extent.createTest("AdminPage - Search with User role(Admin)", "Verify search results by selecting Admin option from User Role menu");
 		Log.info("Scenario: To verify search results by selecting Admin option from User Role menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -151,11 +166,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.error("Results are not correct(Results for ESS roles also present which is unexpected)");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Results are not correct(Results for ESS roles also present which is unexpected)").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		else
 		{
 			Log.info("Results are correct");
 			softAssert.assertTrue(true);
+			extentTest.pass("Results are correct");
 		}	
 		softAssert.assertAll();
 		
@@ -164,6 +182,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForUserRoleESS() throws InterruptedException //Here We verify that the results shown on choosing Admin user role contains only Admin user role entries
 	{
+		extentTest = extent.createTest("AdminPage - Search with User role(ESS)", "Verify search results by selecting ESS option from User Role menu");
 		Log.info("Scenario: To verify search results by selecting ESS option from User Role menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -186,11 +205,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.error("Results are not correct(Results for Admin roles are also present which is unexpected)");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Results are not correct(Results for Admin roles are also present which is unexpected)").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		else
 		{
 			Log.info("Results are correct");
 			softAssert.assertTrue(true);
+			extentTest.pass("Screenshot is as expected");
 		}	
 		softAssert.assertAll();
 		
@@ -199,6 +221,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyExistingEmployeeNameRecords() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Search Existing Employee name", "Verify search results for existing Employee Name");
 		Log.info("Scenario: To verify search results for existing Employee Name");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -224,11 +247,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.info("Correct record for the Employee name is displayed");
 			softAssert.assertTrue(true);
+			extentTest.pass("Correct record for the Employee name is displayed");
 		}
 		else
 		{
 			Log.error("No record found");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("No record found").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 			
 	}
@@ -236,6 +262,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyNonExistingEmployeeNameRecords() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Search Non existing Employee name", "Verify search results for non exisitng Employee name");
 		Log.info("Scenario: To verify search results for non exisitng Employee name");
 		//Search for some employee name that does not exist in the record
 		HomePage hm = new HomePage(driver);
@@ -259,11 +286,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 				{
 					Log.info("Output is as expected");
 					softAssert.assertTrue(true);
+					extentTest.pass("Output is as expected");
 				}
 		else
 		{
 			Log.error("Output is not as expected, it should be 'No Record Found'");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Output is not as expected, it should be 'No Record Found'").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		captureScreenshot(driver, "searchNonExistingEmployee_failed");
 		softAssert.assertAll();
@@ -273,6 +303,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyStatusContentsInDropDown() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Options in 'Status' menu", "Verify options in Status drop down menu");
 		Log.info("Scenario: To verify options in Status drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -301,17 +332,21 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.info("Both the status options are present in the dropdown");
 			softAssert.assertTrue(true);
+			extentTest.pass("Both the status options are present in the dropdown");
 		}
 		else
 		{
 			Log.error("Options are missing in the dropdown");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Options are missing in the dropdown").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}		
 	}
 	
 	@Test
 	void verifyResultsForStatusEnabled() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Status 'Enabled' search results", "Verify 'Enabled' option in Status drop down menu");
 		Log.info("Scenario: To verify 'Enabled' option in Status drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -336,16 +371,20 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.error("Results are not correct(Results for 'Disabled' status are also present which is unexpected)");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Results are not correct(Results for 'Disabled' status are also present which is unexpected)").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		else if(!searchResults.contains("Enabled") && !searchResults.contains("Disabled"))
 		{
 			Log.info("No Record Found");
 			softAssert.assertTrue(true);
+			extentTest.pass("No Record Found");
 		}		
 		else
 		{
 			Log.info("Results are correct");
 			softAssert.assertTrue(true);
+			extentTest.pass("Results are correct");
 		}	
 		softAssert.assertAll();
 	}
@@ -353,6 +392,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForStatusDisabled() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Status 'Disabled' search results", "Verify 'Disabled' option in Status drop down menu");
 		Log.info("Scenario: To verify 'Disabled' option in Status drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -377,16 +417,20 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.error("Results are not correct(Results for 'Enabled' status are also present which is unexpected)");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Results are not correct(Results for 'Enabled' status are also present which is unexpected)").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		else if(!searchResults.contains("Enabled") && !searchResults.contains("Disabled"))
 		{
 			Log.info("No Record Found");
 			softAssert.assertTrue(true);
+			extentTest.pass("No Record Found");
 		}
 		else
 		{
 			Log.info("Results are correct");
 			softAssert.assertTrue(true);
+			extentTest.pass("Results are correct");
 		}	
 		softAssert.assertAll();
 	}
@@ -394,6 +438,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void compareAddUserScreenshot() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Page after click on addUser", "Compare the screenshots after clicking on Add user");
 		Log.info("Scenario: Compare the screenshots after clicking on Add user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -414,11 +459,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.error("The Expected and Actual screenshots are different");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("The Expected and Actual screenshots are different").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		else
 		{
 			Log.info("addUser Screenshots are as expected ");
 			softAssert.assertTrue(true);
+			extentTest.pass("addUser Screenshots are as expected");
 		}
 		softAssert.assertAll();
 		
@@ -427,6 +475,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyStatusAfterAddingNewUser() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - Add new user sucessfully", "Verify status after adding new user successfully");
 		Log.info("Scenario: To verify status after adding new user successfully");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -470,11 +519,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.info("Successfully Saved");
 			softAssert.assertTrue(true);
+			extentTest.pass("Successfully Saved");
 		}
 		else
 		{
 			Log.error("Not saved");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("User not saved").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		softAssert.assertAll();
 	}
@@ -482,6 +534,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyByAddingNewDuplicateUsername() throws InterruptedException
 	{
+		extentTest = extent.createTest("AdminPage - add duplicate user", "Verify error mesage when trying to create a duplicate user");
 		Log.info("Scenario: To verify error mesage when trying to create a duplicate user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -529,11 +582,14 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		{
 			Log.info("Correct error msg for duplicate username is printed");
 			softAssert.assertTrue(true);
+			extentTest.pass("Correct error msg for duplicate username is printed");
 		}
 		else
 		{
 			Log.error("Expected error msg is 'User Already Exists' but printed error msg is '"+duplicateUsernameExistsTxt+"'");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Expected error msg is 'User Already Exists' but printed error msg is"+duplicateUsernameExistsTxt+"'").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		softAssert.assertAll();
 		
@@ -542,6 +598,8 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void deleteUser() throws InterruptedException
 	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		extentTest = extent.createTest("AdminPage - Delete User", "Verify status after successfully deleting user");
 		Log.info("Scenario: To verify status after successfully deleting user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -550,7 +608,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.setUsername(validUsername);
 		hm.setLoginPass(validPassword);
 		hm.clickLogin();
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.elementToBeClickable(ad.elementAdmin()));
 		ad.clickAdmin();
 		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
@@ -568,7 +626,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		ad.elementNewUserPass().sendKeys("skywalker@123");
 		ad.elementNewUserConfirmPass().sendKeys("skywalker@123");
 		ad.clickSave();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.elementToBeClickable(ad.elementAddUser()));
 		//System.out.println("After wait time");
 		ad.setSysUsername(randomUsername);
@@ -590,15 +648,18 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		});
 		
 		String getPageSourceAfterDelete = driver.getPageSource();
+		String base64Code = screenShotCapture();
 		if(getPageSourceAfterDelete.contains("Successfully Deleted") == true)
 		{
 			Log.info("correct 'Successfully deleted' confirmation msg is printed");
 			softAssert.assertTrue(true);
+			extentTest.pass("correct 'Successfully deleted' confirmation msg is printed").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());;
 		}
 		else
 		{
 			Log.error("'Successfull deleted' acknowledgement msg is not printed, probably user was not deleted successfully");
 			softAssert.assertTrue(false);
+			extentTest.fail("'Successfull deleted' acknowledgement msg is not printed, probably user was not deleted successfully").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 			
 			softAssert.assertAll();

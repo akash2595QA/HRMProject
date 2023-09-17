@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.hrm.baseclass.BaseClass;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.github.javafaker.Faker;
 import com.hrm.pages.AdminPage;
 import com.hrm.pages.HomePage;
@@ -20,6 +21,7 @@ public class TC_004_FieldLevelValidations extends BaseClass
 	@Test
 	void verifyLoginWithTwoWrongAttempts() throws InterruptedException
 	{
+		extentTest = extent.createTest("FieldValidation - 2 failed login attempts", "verify behavior of the Login after two failed attempts");
 		Log.info("Scenario: To verify behavior of the Login after two failed attempts");
 		HomePage hm = new HomePage(driver);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -38,11 +40,14 @@ public class TC_004_FieldLevelValidations extends BaseClass
 		{
 			Log.info("Correct error message for two failed attempts is printed");
 			softAssert.assertTrue(true);
+			extentTest.pass("Correct error message for two failed attempts is printed");
 		}
 		else
 		{
 			Log.error("Expected error message for two failed attempts is not printed");
 			softAssert.assertTrue(false);
+			String base64Code = screenShotCapture();
+			extentTest.fail("Expected error message for two failed attempts is not printed").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		}
 		softAssert.assertAll();
 	}
@@ -50,6 +55,7 @@ public class TC_004_FieldLevelValidations extends BaseClass
 	@Test
 	void validatingAddUserWhenEmployeeNameFieldIsEmpty() throws InterruptedException
 	{
+		extentTest = extent.createTest("FieldVaidation - Add user empty Employee name", "Validate adding user keeping Employee name field blank");
 		Log.info("To validate adding user keeping Employee name field blank");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -79,14 +85,28 @@ public class TC_004_FieldLevelValidations extends BaseClass
 		Thread.sleep(3000);
 		String actualMsg = driver.findElement(By.xpath("//div[2]/div/span[contains(@class, 'oxd-text')]")).getText();
 		String expecTedMsg = "Employee name is required";
-		softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
-		softAssert.assertAll();
+		if(actualMsg.equals(expecTedMsg))
+		{
+			Log.info("Correct error message is displayed");
+			softAssert.assertTrue(true);
+			extentTest.pass("Correct error message is displayed");
+		//softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+		}
+		else
+		{
+			softAssert.assertTrue(false);
+			Log.error("Expected error message is not displayed: ");
+			String base64Code = screenShotCapture();
+			extentTest.fail("Expected error message is not displayed:").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 		
+		}
+		softAssert.assertAll();
 	}
 	
 	@Test
 	void validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum() throws InterruptedException
 	{
+		extentTest = extent.createTest("FieldValidation - Employee name(less than min characters)", "Validate Employee name field by adding less than 5 characters");
 		Log.info("Scenario: To validate Employee name field by adding less than 5 characters");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -118,7 +138,22 @@ public class TC_004_FieldLevelValidations extends BaseClass
 		Thread.sleep(3000);
 		String actualMsg = driver.findElement(By.xpath("//div[2]/div/span[contains(@class, 'oxd-text')]")).getText();
 		String expecTedMsg = "Employee name should be minimum of 5 letters and maximum of 100 only";
-		softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+		//softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+		if(actualMsg.equals(expecTedMsg))
+		{
+			Log.info("Correct error message is displayed");
+			softAssert.assertTrue(true);
+			extentTest.pass("Correct error message is displayed");
+		//softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+		}
+		else
+		{
+			softAssert.assertTrue(false);
+			Log.error("Expected error message is not displayed: ");
+			String base64Code = screenShotCapture();
+			extentTest.fail("Expected error message is not displayed:").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
+		
+		}
 		softAssert.assertAll();
 		
 	}
@@ -126,6 +161,7 @@ public class TC_004_FieldLevelValidations extends BaseClass
 	@Test
 	void validatingAddUserWhenUserameFieldIsEmpty() throws InterruptedException
 	{
+		extentTest = extent.createTest("FieldValidation - empty username", "Validate Username field by keeping it empty when adding new user");
 		Log.info("Scenario: To validate Username field by keeping it empty when adding new user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -153,13 +189,28 @@ public class TC_004_FieldLevelValidations extends BaseClass
 		Thread.sleep(2000);
 		String actualError = driver.findElement(By.xpath("//div/div[4]/div/span[contains(@class, \"oxd-text\")]")).getText();
 		String expectedError = "User Name is required field";
-		softAssert.assertEquals(actualError, expectedError, "Expected error message is not dsplayed: ");
+		if(actualError.equals(expectedError))
+		{
+			Log.info("Correct error message is displayed");
+			softAssert.assertTrue(true);
+			extentTest.pass("Correct error message is displayed");
+		//softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+		}
+		else
+		{
+			softAssert.assertTrue(false);
+			Log.error("Expected error message is not displayed: ");
+			String base64Code = screenShotCapture();
+			extentTest.fail("Expected error message is not displayed:").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
+		
+		}
 		softAssert.assertAll();
 	}
 		
 		@Test
 		void verifyAddUserUsernameFieldValueLimit() throws InterruptedException
 		{
+			extentTest = extent.createTest("FieldValidation - username field char limit", "validate username field when wntering less than 5 and more than 20 characters");
 			Log.info("Scenario: To validate username field when wntering less than 5 and more than 20 characters");
 			HomePage hm = new HomePage(driver);
 			AdminPage ad = new AdminPage(driver);
@@ -190,14 +241,43 @@ public class TC_004_FieldLevelValidations extends BaseClass
 			Thread.sleep(2000);
 			String actualError = driver.findElement(By.xpath("//div/div[4]/div/span[contains(@class, \"oxd-text\")]")).getText();
 			String expectedError = "User Name filed should be minimum of 5 letters and maximum of 20 letters";
-			softAssert.assertEquals(actualError, expectedError, "Expected error message is not dsplayed: ");
+			if(actualError.equals(expectedError))
+			{
+				Log.info("Correct error message is displayed");
+				softAssert.assertTrue(true);
+				extentTest.pass("Correct error message is displayed");
+			//softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+			}
+			else
+			{
+				softAssert.assertTrue(false);
+				Log.error("Expected error message is not displayed: ");
+				String base64Code = screenShotCapture();
+				extentTest.fail("Expected error message is not displayed:").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
+			
+			}
+			
 			ad.elementNewUsername().sendKeys(Keys.DELETE);
 			String randomUsernameMax = faker.lorem().characters(45);
 			ad.elementNewUsername().sendKeys(randomUsernameMax);
 			Thread.sleep(1000);
 			String actualError2 = driver.findElement(By.xpath("//div/div[4]/div/span[contains(@class, \"oxd-text\")]")).getText();
 			String expectedError2 = "User Name filed should be minimum of 5 letters and maximum of 20 letters";
-			softAssert.assertEquals(actualError2, expectedError2, "Expected error message is not displayed: ");	
+			if(actualError2.equals(expectedError2))
+			{
+				Log.info("Correct error message is displayed");
+				softAssert.assertTrue(true);
+				extentTest.pass("Correct error message is displayed");
+			//softAssert.assertEquals(actualMsg, expecTedMsg, "Expected error message is not displayed: ");
+			}
+			else
+			{
+				softAssert.assertTrue(false);
+				Log.error("Expected error message is not displayed: ");
+				String base64Code = screenShotCapture();
+				extentTest.fail("Expected error message is not displayed:").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
+			
+			}	
 			softAssert.assertAll();
 			
 		}
@@ -205,6 +285,7 @@ public class TC_004_FieldLevelValidations extends BaseClass
 		@Test
 		void verfyAddUserUsernameFieldForOnlyAlphaNumeric() throws InterruptedException
 		{
+			extentTest = extent.createTest("FieldValidation - Username for alphanumeric", "Validate Username field by adding non alphanumeric data");
 			Log.info("Scenario: To validate Username field by adding non alphanumeric data");
 			HomePage hm = new HomePage(driver);
 			AdminPage ad = new AdminPage(driver);
@@ -240,11 +321,14 @@ public class TC_004_FieldLevelValidations extends BaseClass
 			{
 				Log.info("Expected error message for non Alphanumeric data entry is displayed");
 				softAssert.assertTrue(true);
+				extentTest.pass("Expected error message for non Alphanumeric data entry is displayed");
 			}
 			else
 			{
 				Log.error("Expected error message for non Alphanumeric data entry is not displayed");
 				softAssert.assertTrue(false);
+				String base64Code = screenShotCapture();
+				extentTest.fail("Expected error message for non Alphanumeric data entry is not displayed").info(MediaEntityBuilder.createScreenCaptureFromBase64String(base64Code, "Screenshot Attached").build());
 			}
 			softAssert.assertAll();
 		}

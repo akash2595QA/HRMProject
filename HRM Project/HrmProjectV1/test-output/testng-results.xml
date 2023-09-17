@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="29" passed="15" failed="14" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-17T13:37:31 IST" name="Default suite" finished-at="2023-09-17T13:38:00 IST" duration-ms="28956">
+  <suite started-at="2023-09-17T20:04:55 IST" name="Suite" finished-at="2023-09-17T20:19:30 IST" duration-ms="875834">
     <groups>
     </groups>
-    <test started-at="2023-09-17T13:37:31 IST" name="Default test" finished-at="2023-09-17T13:38:00 IST" duration-ms="28956">
-      <class name="com.hrm.testcases.TC_007_VerifyDashboardModule">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@4b7e96a]" started-at="2023-09-17T13:37:31 IST" name="setup" finished-at="2023-09-17T13:37:49 IST" duration-ms="17956" status="PASS">
+    <test started-at="2023-09-17T20:04:55 IST" name="HrmTest1" finished-at="2023-09-17T20:19:08 IST" duration-ms="853759">
+      <class name="com.hrm.testcases.TC_005_VerifyLogoutModule">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:17:49 IST" name="setup" finished-at="2023-09-17T20:18:04 IST" duration-ms="14710" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDashboardPageContents()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@4b7e96a]" started-at="2023-09-17T13:37:49 IST" name="verifyDashboardPageContents" finished-at="2023-09-17T13:37:58 IST" duration-ms="8739" status="FAIL">
+        <test-method signature="verifyContentsOfTheUserProfileBtn()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:04 IST" name="verifyContentsOfTheUserProfileBtn" finished-at="2023-09-17T20:18:12 IST" duration-ms="7984" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContentsOfTheUserProfileBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:12 IST" name="tearDown" finished-at="2023-09-17T20:18:14 IST" duration-ms="1855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:14 IST" name="setup" finished-at="2023-09-17T20:18:29 IST" duration-ms="15029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogout()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:29 IST" name="verifyLogout" finished-at="2023-09-17T20:18:40 IST" duration-ms="10785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:40 IST" name="tearDown" finished-at="2023-09-17T20:18:42 IST" duration-ms="1684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrm.testcases.TC_005_VerifyLogoutModule -->
+      <class name="com.hrm.testcases.TC_004_FieldLevelValidations">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:14:29 IST" name="setup" finished-at="2023-09-17T20:14:45 IST" duration-ms="16257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validatingAddUserWhenEmployeeNameFieldIsEmpty()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:14:45 IST" name="validatingAddUserWhenEmployeeNameFieldIsEmpty" finished-at="2023-09-17T20:15:04 IST" duration-ms="18211" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -22,7 +48,7 @@ expected [true] but found [false]]]>
 expected [true] but found [false]
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.hrm.testcases.TC_007_VerifyDashboardModule.verifyDashboardPageContents(TC_007_VerifyDashboardModule.java:35)
+at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenEmployeeNameFieldIsEmpty(TC_004_FieldLevelValidations.java:103)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -54,12 +80,922 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- validatingAddUserWhenEmployeeNameFieldIsEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:04 IST" name="tearDown" finished-at="2023-09-17T20:15:05 IST" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:05 IST" name="setup" finished-at="2023-09-17T20:15:20 IST" duration-ms="15056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:20 IST" name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum" finished-at="2023-09-17T20:15:39 IST" duration-ms="18334" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum(TC_004_FieldLevelValidations.java:157)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:39 IST" name="tearDown" finished-at="2023-09-17T20:15:40 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:40 IST" name="setup" finished-at="2023-09-17T20:15:56 IST" duration-ms="15542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validatingAddUserWhenUserameFieldIsEmpty()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:56 IST" name="validatingAddUserWhenUserameFieldIsEmpty" finished-at="2023-09-17T20:16:13 IST" duration-ms="17163" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenUserameFieldIsEmpty(TC_004_FieldLevelValidations.java:207)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingAddUserWhenUserameFieldIsEmpty -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:13 IST" name="tearDown" finished-at="2023-09-17T20:16:15 IST" duration-ms="1621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:15 IST" name="setup" finished-at="2023-09-17T20:16:31 IST" duration-ms="16509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verfyAddUserUsernameFieldForOnlyAlphaNumeric()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:31 IST" name="verfyAddUserUsernameFieldForOnlyAlphaNumeric" finished-at="2023-09-17T20:16:50 IST" duration-ms="18641" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_004_FieldLevelValidations.verfyAddUserUsernameFieldForOnlyAlphaNumeric(TC_004_FieldLevelValidations.java:333)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfyAddUserUsernameFieldForOnlyAlphaNumeric -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:50 IST" name="tearDown" finished-at="2023-09-17T20:16:52 IST" duration-ms="1611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:52 IST" name="setup" finished-at="2023-09-17T20:17:07 IST" duration-ms="15719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAddUserUsernameFieldValueLimit()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:07 IST" name="verifyAddUserUsernameFieldValueLimit" finished-at="2023-09-17T20:17:26 IST" duration-ms="18403" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_004_FieldLevelValidations.verifyAddUserUsernameFieldValueLimit(TC_004_FieldLevelValidations.java:281)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddUserUsernameFieldValueLimit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:26 IST" name="tearDown" finished-at="2023-09-17T20:17:27 IST" duration-ms="1625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:27 IST" name="setup" finished-at="2023-09-17T20:17:43 IST" duration-ms="15444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginWithTwoWrongAttempts()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:43 IST" name="verifyLoginWithTwoWrongAttempts" finished-at="2023-09-17T20:17:48 IST" duration-ms="5071" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_004_FieldLevelValidations.verifyLoginWithTwoWrongAttempts(TC_004_FieldLevelValidations.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithTwoWrongAttempts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:48 IST" name="tearDown" finished-at="2023-09-17T20:17:49 IST" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrm.testcases.TC_004_FieldLevelValidations -->
+      <class name="com.hrm.testcases.TC_003_VerifyAdminModule">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:11 IST" name="setup" finished-at="2023-09-17T20:06:27 IST" duration-ms="15335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deleteUser()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:27 IST" name="deleteUser" finished-at="2023-09-17T20:06:56 IST" duration-ms="29614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:56 IST" name="tearDown" finished-at="2023-09-17T20:06:58 IST" duration-ms="2176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:58 IST" name="setup" finished-at="2023-09-17T20:07:19 IST" duration-ms="20300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyAdminPageContents()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:19 IST" name="verifyAdminPageContents" finished-at="2023-09-17T20:07:27 IST" duration-ms="8106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdminPageContents -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:27 IST" name="tearDown" finished-at="2023-09-17T20:07:29 IST" duration-ms="2474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:29 IST" name="setup" finished-at="2023-09-17T20:07:45 IST" duration-ms="15396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyResultsForStatusEnabled()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:45 IST" name="verifyResultsForStatusEnabled" finished-at="2023-09-17T20:08:00 IST" duration-ms="14924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResultsForStatusEnabled -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:00 IST" name="tearDown" finished-at="2023-09-17T20:08:01 IST" duration-ms="1939" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:01 IST" name="setup" finished-at="2023-09-17T20:08:17 IST" duration-ms="15900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyResultsForStatusDisabled()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:17 IST" name="verifyResultsForStatusDisabled" finished-at="2023-09-17T20:08:34 IST" duration-ms="16468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResultsForStatusDisabled -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:34 IST" name="tearDown" finished-at="2023-09-17T20:08:36 IST" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:36 IST" name="setup" finished-at="2023-09-17T20:08:56 IST" duration-ms="20262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyResultsForUserRoleESS()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:56 IST" name="verifyResultsForUserRoleESS" finished-at="2023-09-17T20:09:18 IST" duration-ms="21994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResultsForUserRoleESS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:18 IST" name="tearDown" finished-at="2023-09-17T20:09:21 IST" duration-ms="3195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:21 IST" name="setup" finished-at="2023-09-17T20:09:42 IST" duration-ms="20912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyResultsForUserRoleAdmin()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:42 IST" name="verifyResultsForUserRoleAdmin" finished-at="2023-09-17T20:09:52 IST" duration-ms="9972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResultsForUserRoleAdmin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:52 IST" name="tearDown" finished-at="2023-09-17T20:09:55 IST" duration-ms="2413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:55 IST" name="setup" finished-at="2023-09-17T20:10:13 IST" duration-ms="18589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserRoleOptions()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:13 IST" name="verifyUserRoleOptions" finished-at="2023-09-17T20:10:21 IST" duration-ms="7416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRoleOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:21 IST" name="tearDown" finished-at="2023-09-17T20:10:22 IST" duration-ms="1530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:22 IST" name="setup" finished-at="2023-09-17T20:10:39 IST" duration-ms="16997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyStatusAfterAddingNewUser()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:39 IST" name="verifyStatusAfterAddingNewUser" finished-at="2023-09-17T20:10:57 IST" duration-ms="18388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusAfterAddingNewUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:57 IST" name="tearDown" finished-at="2023-09-17T20:10:59 IST" duration-ms="2019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:59 IST" name="setup" finished-at="2023-09-17T20:11:19 IST" duration-ms="19558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySearchResultWithExistingUsername()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:19 IST" name="verifySearchResultWithExistingUsername" finished-at="2023-09-17T20:11:29 IST" duration-ms="9594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchResultWithExistingUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:29 IST" name="tearDown" finished-at="2023-09-17T20:11:30 IST" duration-ms="1699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:30 IST" name="setup" finished-at="2023-09-17T20:11:45 IST" duration-ms="14766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyExistingEmployeeNameRecords()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:45 IST" name="verifyExistingEmployeeNameRecords" finished-at="2023-09-17T20:12:02 IST" duration-ms="17054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyExistingEmployeeNameRecords -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:02 IST" name="tearDown" finished-at="2023-09-17T20:12:04 IST" duration-ms="1731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:04 IST" name="setup" finished-at="2023-09-17T20:12:20 IST" duration-ms="15892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyNonExistingEmployeeNameRecords()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:20 IST" name="verifyNonExistingEmployeeNameRecords" finished-at="2023-09-17T20:12:30 IST" duration-ms="10368" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_003_VerifyAdminModule.verifyNonExistingEmployeeNameRecords(TC_003_VerifyAdminModule.java:299)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNonExistingEmployeeNameRecords -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:30 IST" name="tearDown" finished-at="2023-09-17T20:12:32 IST" duration-ms="1687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:32 IST" name="setup" finished-at="2023-09-17T20:12:49 IST" duration-ms="17346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyStatusContentsInDropDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:49 IST" name="verifyStatusContentsInDropDown" finished-at="2023-09-17T20:13:00 IST" duration-ms="10979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStatusContentsInDropDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:00 IST" name="tearDown" finished-at="2023-09-17T20:13:02 IST" duration-ms="1712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:02 IST" name="setup" finished-at="2023-09-17T20:13:21 IST" duration-ms="19406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareAddUserScreenshot()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:21 IST" name="compareAddUserScreenshot" finished-at="2023-09-17T20:13:37 IST" duration-ms="15398" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_003_VerifyAdminModule.compareAddUserScreenshot(TC_003_VerifyAdminModule.java:471)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareAddUserScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:37 IST" name="tearDown" finished-at="2023-09-17T20:13:39 IST" duration-ms="2249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:39 IST" name="setup" finished-at="2023-09-17T20:13:58 IST" duration-ms="18778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyByAddingNewDuplicateUsername()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:58 IST" name="verifyByAddingNewDuplicateUsername" finished-at="2023-09-17T20:14:28 IST" duration-ms="29809" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_003_VerifyAdminModule.verifyByAddingNewDuplicateUsername(TC_003_VerifyAdminModule.java:594)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyByAddingNewDuplicateUsername -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:14:28 IST" name="tearDown" finished-at="2023-09-17T20:14:29 IST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrm.testcases.TC_003_VerifyAdminModule -->
+      <class name="com.hrm.testcases.TC_001_VerifyHomePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-17T20:04:55 IST" name="setup" finished-at="2023-09-17T20:05:14 IST" duration-ms="19406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareHomePageScreenshot()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-17T20:05:14 IST" name="compareHomePageScreenshot" finished-at="2023-09-17T20:05:21 IST" duration-ms="7288" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_001_VerifyHomePage.compareHomePageScreenshot(TC_001_VerifyHomePage.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHomePageScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-17T20:05:21 IST" name="tearDown" finished-at="2023-09-17T20:05:24 IST" duration-ms="2496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrm.testcases.TC_001_VerifyHomePage -->
+      <class name="com.hrm.testcases.TC_007_VerifyDashboardModule">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-17T20:18:42 IST" name="setup" finished-at="2023-09-17T20:18:57 IST" duration-ms="15533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyDashboardPageContents()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-17T20:18:57 IST" name="verifyDashboardPageContents" finished-at="2023-09-17T20:19:07 IST" duration-ms="9480" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyDashboardPageContents -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@4b7e96a]" started-at="2023-09-17T13:37:58 IST" name="tearDown" finished-at="2023-09-17T13:38:00 IST" duration-ms="2180" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-17T20:19:07 IST" name="tearDown" finished-at="2023-09-17T20:19:08 IST" duration-ms="1829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_007_VerifyDashboardModule -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:24 IST" name="setup" finished-at="2023-09-17T20:05:39 IST" duration-ms="15249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidPasswordAttempt()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:39 IST" name="invalidPasswordAttempt" finished-at="2023-09-17T20:05:42 IST" duration-ms="2783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordAttempt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:42 IST" name="tearDown" finished-at="2023-09-17T20:05:44 IST" duration-ms="1714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:44 IST" name="setup" finished-at="2023-09-17T20:05:59 IST" duration-ms="15420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validPasswordAttempt()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:59 IST" name="validPasswordAttempt" finished-at="2023-09-17T20:06:08 IST" duration-ms="9401" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials.validPasswordAttempt(TC_002_VerifyHomeLoginWithCredentials.java:83)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validPasswordAttempt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:06:08 IST" name="tearDown" finished-at="2023-09-17T20:06:11 IST" duration-ms="2729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
+    </test> <!-- HrmTest1 -->
+    <test started-at="2023-09-17T20:19:09 IST" name="HrmTest2" finished-at="2023-09-17T20:19:30 IST" duration-ms="21601">
+      <class name="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts">
+        <test-method is-config="true" signature="setupBeforeTest()[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:09 IST" name="setupBeforeTest" finished-at="2023-09-17T20:19:23 IST" duration-ms="14021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBeforeTest -->
+        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:23 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-17T20:19:24 IST" duration-ms="1619" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithThreeWrongAttempts -->
+        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:24 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-17T20:19:26 IST" duration-ms="1665" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithThreeWrongAttempts -->
+        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:26 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-17T20:19:28 IST" duration-ms="1624" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false],
+expected [true] but found [false],
+expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithThreeWrongAttempts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:28 IST" name="tearDown" finished-at="2023-09-17T20:19:30 IST" duration-ms="2653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts -->
+    </test> <!-- HrmTest2 -->
+  </suite> <!-- Suite -->
 </testng-results>

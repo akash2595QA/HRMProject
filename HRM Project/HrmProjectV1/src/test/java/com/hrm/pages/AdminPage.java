@@ -79,6 +79,11 @@ public class AdminPage
 		linkAdmin.click();
 	}
 	
+	public WebElement elementAdmin()
+	{
+		return linkAdmin;
+	}
+	
 	public void setSysUsername(String uname)
 	{
 		sysUsername.sendKeys(uname);

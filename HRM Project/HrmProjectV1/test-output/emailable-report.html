@@ -8,42 +8,121 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">28,956</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">HrmTest1</a></td><td class="num">15</td><td class="num">0</td><td class="num">0</td><td class="num attn">11</td><td class="num">853,759</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">HrmTest2</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">21,601</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">15</th><th class="num">0</th><th class="num">0</th><th class="num attn">14</th><th class="num">875,360</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hrm.testcases.TC_007_VerifyDashboardModule</td><td><a href="#m0">verifyDashboardPageContents</a></td><td rowspan="1">1694938069584</td><td rowspan="1">8739</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">HrmTest1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.hrm.testcases.TC_001_VerifyHomePage</td><td><a href="#m0">compareHomePageScreenshot</a></td><td rowspan="1">1694961314596</td><td rowspan="1">7288</td></tr><tr class="failedodd"><td rowspan="1">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials</td><td><a href="#m1">validPasswordAttempt</a></td><td rowspan="1">1694961359580</td><td rowspan="1">9401</td></tr><tr class="failedeven"><td rowspan="3">com.hrm.testcases.TC_003_VerifyAdminModule</td><td><a href="#m2">compareAddUserScreenshot</a></td><td rowspan="1">1694961801784</td><td rowspan="1">15398</td></tr><tr class="failedeven"><td><a href="#m3">verifyByAddingNewDuplicateUsername</a></td><td rowspan="1">1694961838213</td><td rowspan="1">29809</td></tr><tr class="failedeven"><td><a href="#m4">verifyNonExistingEmployeeNameRecords</a></td><td rowspan="1">1694961740276</td><td rowspan="1">10368</td></tr><tr class="failedodd"><td rowspan="6">com.hrm.testcases.TC_004_FieldLevelValidations</td><td><a href="#m5">validatingAddUserWhenEmployeeNameFieldIsEmpty</a></td><td rowspan="1">1694961885933</td><td rowspan="1">18211</td></tr><tr class="failedodd"><td><a href="#m6">validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum</a></td><td rowspan="1">1694961920958</td><td rowspan="1">18334</td></tr><tr class="failedodd"><td><a href="#m7">validatingAddUserWhenUserameFieldIsEmpty</a></td><td rowspan="1">1694961956457</td><td rowspan="1">17163</td></tr><tr class="failedodd"><td><a href="#m8">verfyAddUserUsernameFieldForOnlyAlphaNumeric</a></td><td rowspan="1">1694961991753</td><td rowspan="1">18641</td></tr><tr class="failedodd"><td><a href="#m9">verifyAddUserUsernameFieldValueLimit</a></td><td rowspan="1">1694962027737</td><td rowspan="1">18403</td></tr><tr class="failedodd"><td><a href="#m10">verifyLoginWithTwoWrongAttempts</a></td><td rowspan="1">1694962063212</td><td rowspan="1">5071</td></tr><tr><th colspan="4">HrmTest1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials</td><td><a href="#m11">invalidPasswordAttempt</a></td><td rowspan="1">1694961339656</td><td rowspan="1">2783</td></tr><tr class="passedodd"><td rowspan="11">com.hrm.testcases.TC_003_VerifyAdminModule</td><td><a href="#m12">deleteUser</a></td><td rowspan="1">1694961387051</td><td rowspan="1">29614</td></tr><tr class="passedodd"><td><a href="#m13">verifyAdminPageContents</a></td><td rowspan="1">1694961439145</td><td rowspan="1">8106</td></tr><tr class="passedodd"><td><a href="#m14">verifyExistingEmployeeNameRecords</a></td><td rowspan="1">1694961705596</td><td rowspan="1">17054</td></tr><tr class="passedodd"><td><a href="#m15">verifyResultsForStatusDisabled</a></td><td rowspan="1">1694961497891</td><td rowspan="1">16468</td></tr><tr class="passedodd"><td><a href="#m16">verifyResultsForStatusEnabled</a></td><td rowspan="1">1694961465124</td><td rowspan="1">14924</td></tr><tr class="passedodd"><td><a href="#m17">verifyResultsForUserRoleAdmin</a></td><td rowspan="1">1694961582632</td><td rowspan="1">9972</td></tr><tr class="passedodd"><td><a href="#m18">verifyResultsForUserRoleESS</a></td><td rowspan="1">1694961536526</td><td rowspan="1">21994</td></tr><tr class="passedodd"><td><a href="#m19">verifySearchResultWithExistingUsername</a></td><td rowspan="1">1694961679532</td><td rowspan="1">9594</td></tr><tr class="passedodd"><td><a href="#m20">verifyStatusAfterAddingNewUser</a></td><td rowspan="1">1694961639564</td><td rowspan="1">18388</td></tr><tr class="passedodd"><td><a href="#m21">verifyStatusContentsInDropDown</a></td><td rowspan="1">1694961769683</td><td rowspan="1">10979</td></tr><tr class="passedodd"><td><a href="#m22">verifyUserRoleOptions</a></td><td rowspan="1">1694961613617</td><td rowspan="1">7416</td></tr><tr class="passedeven"><td rowspan="2">com.hrm.testcases.TC_005_VerifyLogoutModule</td><td><a href="#m23">verifyContentsOfTheUserProfileBtn</a></td><td rowspan="1">1694962084674</td><td rowspan="1">7984</td></tr><tr class="passedeven"><td><a href="#m24">verifyLogout</a></td><td rowspan="1">1694962109544</td><td rowspan="1">10785</td></tr><tr class="passedodd"><td rowspan="1">com.hrm.testcases.TC_007_VerifyDashboardModule</td><td><a href="#m25">verifyDashboardPageContents</a></td><td rowspan="1">1694962137553</td><td rowspan="1">9480</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">HrmTest2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts</td><td><a href="#m26">verifyLoginWithThreeWrongAttempts</a></td><td rowspan="3">1694962166658</td><td rowspan="3">1624</td></tr><tr class="failedeven"><td><a href="#m27">verifyLoginWithThreeWrongAttempts</a></td></tr><tr class="failedeven"><td><a href="#m28">verifyLoginWithThreeWrongAttempts</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.hrm.testcases.TC_007_VerifyDashboardModule#verifyDashboardPageContents</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.hrm.testcases.TC_007_VerifyDashboardModule.verifyDashboardPageContents(TC_007_VerifyDashboardModule.java:35)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+<h2>HrmTest1</h2><h3 id="m0">com.hrm.testcases.TC_001_VerifyHomePage#compareHomePageScreenshot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [false] but found [true]
+	at com.hrm.testcases.TC_001_VerifyHomePage.compareHomePageScreenshot(TC_001_VerifyHomePage.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials#validPasswordAttempt</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials.validPasswordAttempt(TC_002_VerifyHomeLoginWithCredentials.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.hrm.testcases.TC_003_VerifyAdminModule#compareAddUserScreenshot</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_003_VerifyAdminModule.compareAddUserScreenshot(TC_003_VerifyAdminModule.java:471)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.hrm.testcases.TC_003_VerifyAdminModule#verifyByAddingNewDuplicateUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_003_VerifyAdminModule.verifyByAddingNewDuplicateUsername(TC_003_VerifyAdminModule.java:594)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.hrm.testcases.TC_003_VerifyAdminModule#verifyNonExistingEmployeeNameRecords</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_003_VerifyAdminModule.verifyNonExistingEmployeeNameRecords(TC_003_VerifyAdminModule.java:299)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.hrm.testcases.TC_004_FieldLevelValidations#validatingAddUserWhenEmployeeNameFieldIsEmpty</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenEmployeeNameFieldIsEmpty(TC_004_FieldLevelValidations.java:103)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.hrm.testcases.TC_004_FieldLevelValidations#validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum(TC_004_FieldLevelValidations.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.hrm.testcases.TC_004_FieldLevelValidations#validatingAddUserWhenUserameFieldIsEmpty</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.validatingAddUserWhenUserameFieldIsEmpty(TC_004_FieldLevelValidations.java:207)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.hrm.testcases.TC_004_FieldLevelValidations#verfyAddUserUsernameFieldForOnlyAlphaNumeric</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.verfyAddUserUsernameFieldForOnlyAlphaNumeric(TC_004_FieldLevelValidations.java:333)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.hrm.testcases.TC_004_FieldLevelValidations#verifyAddUserUsernameFieldValueLimit</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.verifyAddUserUsernameFieldValueLimit(TC_004_FieldLevelValidations.java:281)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.hrm.testcases.TC_004_FieldLevelValidations#verifyLoginWithTwoWrongAttempts</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_004_FieldLevelValidations.verifyLoginWithTwoWrongAttempts(TC_004_FieldLevelValidations.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials#invalidPasswordAttempt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.hrm.testcases.TC_003_VerifyAdminModule#deleteUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.hrm.testcases.TC_003_VerifyAdminModule#verifyAdminPageContents</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.hrm.testcases.TC_003_VerifyAdminModule#verifyExistingEmployeeNameRecords</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.hrm.testcases.TC_003_VerifyAdminModule#verifyResultsForStatusDisabled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.hrm.testcases.TC_003_VerifyAdminModule#verifyResultsForStatusEnabled</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">com.hrm.testcases.TC_003_VerifyAdminModule#verifyResultsForUserRoleAdmin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">com.hrm.testcases.TC_003_VerifyAdminModule#verifyResultsForUserRoleESS</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">com.hrm.testcases.TC_003_VerifyAdminModule#verifySearchResultWithExistingUsername</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">com.hrm.testcases.TC_003_VerifyAdminModule#verifyStatusAfterAddingNewUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">com.hrm.testcases.TC_003_VerifyAdminModule#verifyStatusContentsInDropDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">com.hrm.testcases.TC_003_VerifyAdminModule#verifyUserRoleOptions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">com.hrm.testcases.TC_005_VerifyLogoutModule#verifyContentsOfTheUserProfileBtn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">com.hrm.testcases.TC_005_VerifyLogoutModule#verifyLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">com.hrm.testcases.TC_007_VerifyDashboardModule#verifyDashboardPageContents</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HrmTest2</h2><h3 id="m26">com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts#verifyLoginWithThreeWrongAttempts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin3</td><td>pass3</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts#verifyLoginWithThreeWrongAttempts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin1</td><td>pass1</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts#verifyLoginWithThreeWrongAttempts</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin2</td><td>pass2</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts.verifyLoginWithThreeWrongAttempts(TC_006_DataDrivenTestingFor3FailedAttempts.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

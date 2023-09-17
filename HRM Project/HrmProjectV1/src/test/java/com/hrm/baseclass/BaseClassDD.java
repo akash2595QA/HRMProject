@@ -29,7 +29,9 @@ import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 import org.openqa.selenium.chrome.ChromeOptions;
-
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class BaseClassDD 
 
 {
@@ -41,11 +43,26 @@ public class BaseClassDD
 	public String validPassword = readConfig.getPassword();
 	String pageUrl = readConfig.getPageUrl();
 	String browserName = readConfig.getBrowserName();
-	
 
+	//Extent Report
+	protected static ExtentReports extent;
+	protected ExtentTest extentTest;
+	
+	static
+	{
+		extent = new ExtentReports();
+		File file = new File("extent-report-ddt.html");
+		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
+		extent.attachReporter(sparkReporter);
+		Log.info("Completed ExtentReport Setup");
+	}
+
+	
 	@BeforeTest
 	public void setupBeforeTest() throws InterruptedException
 	{
+		extentTest = extent.createTest("Login - 3 failed Attempts(Data driven)", "Verify Login behavior after 3 failed attempts to check if login gets locked for 24 hours");
+		
 		Log.info("Scenario: To verify Login behavior after 3 failed attempts");
 		Log.info("setup for data driven invoked");
 		if (browserName.equalsIgnoreCase("chrome"))
@@ -77,7 +94,7 @@ public class BaseClassDD
 		driver.manage().window().maximize();
 		Log.info("Opened Page Url");
 		Thread.sleep(2000);
-
+		
 	}
 	
 
@@ -178,6 +195,13 @@ public class BaseClassDD
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
 	
+	// This returns Base64 of the screenshot
+	public static String screenShotCapture() {
+		Log.info("Capturing Base64 sceenshot");
+		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
+		String base64Code = takeScreenshot.getScreenshotAs(OutputType.BASE64);
+		return base64Code;
+	}
 	
 	@AfterTest
 	public void tearDown()
