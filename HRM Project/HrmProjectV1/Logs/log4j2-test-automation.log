@@ -45,3 +45,21 @@
 [ERROR] 2023-09-17 13:15:23.298 [main] Log - Expected error message for three failed attempts is not printed
 [INFO ] 2023-09-17 13:15:23.342 [main] Log - tear down process starting
 [INFO ] 2023-09-17 13:15:27.899 [main] Log - Browser Closed
+[INFO ] 2023-09-17 13:30:29.481 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 13:30:44.033 [main] Log - Setup Completed
+[INFO ] 2023-09-17 13:31:02.792 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 13:31:07.075 [main] Log - Scenario: To verify approriate tabs are present on the Dashboard Page
+[INFO ] 2023-09-17 13:31:25.324 [main] Log - Dashboard module contains all the features
+[INFO ] 2023-09-17 13:31:30.815 [main] Log - Browser Closed
+[INFO ] 2023-09-17 13:36:31.406 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 13:36:34.933 [main] Log - Setup Completed
+[INFO ] 2023-09-17 13:36:47.721 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 13:36:51.740 [main] Log - Scenario: To verify approriate tabs are present on the Dashboard Page
+[INFO ] 2023-09-17 13:37:00.983 [main] Log - Dashboard module contains all the features
+[INFO ] 2023-09-17 13:37:04.242 [main] Log - Browser Closed
+[INFO ] 2023-09-17 13:37:31.646 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 13:37:35.063 [main] Log - Setup Completed
+[INFO ] 2023-09-17 13:37:45.573 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 13:37:49.605 [main] Log - Scenario: To verify approriate tabs are present on the Dashboard Page
+[ERROR] 2023-09-17 13:37:58.275 [main] Log - Dashboard module does not contain all the features
+[INFO ] 2023-09-17 13:38:00.510 [main] Log - Browser Closed

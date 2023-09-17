@@ -27,6 +27,7 @@
 				name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials" />
 			<class name="com.hrm.testcases.TC_001_VerifyHomePage" />
 			<class name="com.hrm.testcases.TC_004_FieldLevelValidations" />
+			<class name="com.hrm.testcases.TC_007_VerifyDashboardModule"/>
 		</classes>
 	</test> <!--
 	Test -->
