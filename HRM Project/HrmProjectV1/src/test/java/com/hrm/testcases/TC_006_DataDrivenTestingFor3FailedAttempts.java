@@ -13,6 +13,7 @@ import com.hrm.baseclass.BaseClassDD;
 import com.github.javafaker.Faker;
 import com.hrm.pages.AdminPage;
 import com.hrm.pages.HomePage;
+import com.hrm.utilities.Log;
 
 
 public class TC_006_DataDrivenTestingFor3FailedAttempts extends BaseClassDD
@@ -26,6 +27,19 @@ public class TC_006_DataDrivenTestingFor3FailedAttempts extends BaseClassDD
 		hm.setUsername(usr);
 		hm.setLoginPass(pwd);
 		hm.clickLogin();
+		String pageSourceAfterTwoFailesAttempts = driver.getPageSource();
+		String expectedErrorMsg = "Your account is locked for 24 hours please try after 24 hours";
+		if(pageSourceAfterTwoFailesAttempts.contains(expectedErrorMsg))
+		{
+			Log.info("Correct error message for three failed attempts is printed");
+			softAssert.assertTrue(true);
+		}
+		else
+		{
+			Log.error("Expected error message for three failed attempts is not printed");
+			softAssert.assertTrue(false);
+		}
+		softAssert.assertAll();
 	}
 	
 	@DataProvider (name="multiple-user-credentials")

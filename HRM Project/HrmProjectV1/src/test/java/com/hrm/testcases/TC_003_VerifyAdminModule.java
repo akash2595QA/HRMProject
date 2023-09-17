@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import com.hrm.baseclass.*;
 import com.hrm.pages.*;
+import com.hrm.utilities.Log;
 
 import java.time.Duration;
 import java.util.List;
@@ -23,6 +24,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyAdminPageContents() throws InterruptedException
 	{
+		Log.info("Scenario: To verify approriate tabs are present on the Admin page");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -36,19 +38,22 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		boolean status = checkPageSourceContents(driver, strArr);
 		if(status==true)
 		{
-			System.out.println("Admin module contains all the features");
+			Log.info("Admin module contains all the features");
+			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("Admin module does not contain all the features");
+			Log.error("Admin module does not contain all the features");
+			softAssert.assertTrue(false);
 		}
-		softAssert.assertTrue(status);
+		
 		softAssert.assertAll();
 	}
 	
 	@Test
 	void verifySearchResultWithExistingUsername() throws InterruptedException
 	{
+		Log.info("Scenario: To verify search results for existing username search");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -57,11 +62,9 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(2000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.setSysUsername("Admin");
 		ad.clickSearchBtn();
-		System.out.println("Searching done for user");
 		scrollTillEnd();
 		//String searchResultScript = "return document.getElementsByClassName('orangehrm-container').innerHTML;";
 		//String searchResultsHTML = (String) js.executeScript(searchResultScript);
@@ -71,15 +74,20 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		if(searchResults.contains("Admin")==true)
 		{
 			softAssert.assertTrue(true);
+			Log.info("Correct search results are displayed");
 		}
 		else
+		{
 			softAssert.assertTrue(false);
+			Log.error("Incorrect search results are displayed");
+		}
 			softAssert.assertAll();		
 	}
 	
 	@Test
 	void verifyUserRoleOptions() throws InterruptedException
 	{
+		Log.info("Scenario: To verify the options present in User Role drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -88,12 +96,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(2000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickUserRole();
 		WebElement dropDownContent = driver.findElement(By.xpath("//*[contains(@class, 'oxd-select-dropdown')]"));
 		String dropDownText = dropDownContent.getText();
-		System.out.println(dropDownText);
+		//System.out.println(dropDownText);
 		boolean AdminPresent = false;
 		boolean ESSPresent = false;
 		if(dropDownText.contains("Admin"))
@@ -108,12 +116,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		if(AdminPresent && ESSPresent)
 		{
 			softAssert.assertTrue(true);
-			System.out.println("Both the options are present");
+			Log.info("Both the options are present");
 		}
 		else
 		{
 			softAssert.assertTrue(false);
-			System.out.println("Options are not present");
+			Log.error("Options are not present");
 		}
 		softAssert.assertAll();
 	}
@@ -121,6 +129,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForUserRoleAdmin() throws InterruptedException //Here We verify that the results shown on choosing Admin user role contains only Admin user role entries
 	{
+		Log.info("Scenario: To verify search results by selecting Admin option from User Role menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -129,7 +138,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(2000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		//ad.clickUserRole();
 		WebElement select = driver.findElement(By.xpath("//form/div[1]/div/div[2]/div/div[2]/div/div/div[1][@class='oxd-select-text-input']"));
@@ -140,12 +149,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String searchResults = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div")).getAttribute("outerHTML");
 		if(searchResults.contains("ESS"))
 		{
-			System.out.println("Results are not correct(Results for ESS roles also present which is unexpected)");
+			Log.error("Results are not correct(Results for ESS roles also present which is unexpected)");
 			softAssert.assertTrue(false);
 		}
 		else
 		{
-			System.out.println("Results are correct");
+			Log.info("Results are correct");
 			softAssert.assertTrue(true);
 		}	
 		softAssert.assertAll();
@@ -155,6 +164,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForUserRoleESS() throws InterruptedException //Here We verify that the results shown on choosing Admin user role contains only Admin user role entries
 	{
+		Log.info("Scenario: To verify search results by selecting ESS option from User Role menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -163,7 +173,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(2000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		//ad.clickUserRole();
 		WebElement select = driver.findElement(By.xpath("//form/div[1]/div/div[2]/div/div[2]/div/div/div[1][@class='oxd-select-text-input']"));
@@ -174,12 +184,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String searchResults = driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div")).getAttribute("outerHTML");
 		if(searchResults.contains("Admin"))
 		{
-			System.out.println("Results are not correct(Results for Admin roles are also present which is unexpected)");
+			Log.error("Results are not correct(Results for Admin roles are also present which is unexpected)");
 			softAssert.assertTrue(false);
 		}
 		else
 		{
-			System.out.println("Results are correct");
+			Log.info("Results are correct");
 			softAssert.assertTrue(true);
 		}	
 		softAssert.assertAll();
@@ -189,6 +199,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyExistingEmployeeNameRecords() throws InterruptedException
 	{
+		Log.info("Scenario: To verify search results for existing Employee Name");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -197,7 +208,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(2000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		//enter existing employee name in Employee Name field
 		String employeeNameEntered = "Paul Collings";
@@ -211,12 +222,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String eNameResult = driver.findElement(By.xpath("//div/div[2]/div/div/div[4]/div")).getText();
 		if(eNameResult.equals(employeeNameEntered))
 		{
-			System.out.println("Correct record for the Employee name is displayed");
+			Log.info("Correct record for the Employee name is displayed");
 			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("No record found");
+			Log.error("No record found");
 			softAssert.assertTrue(false);
 		}
 			
@@ -225,6 +236,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyNonExistingEmployeeNameRecords() throws InterruptedException
 	{
+		Log.info("Scenario: To verify search results for non exisitng Employee name");
 		//Search for some employee name that does not exist in the record
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
@@ -234,7 +246,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(2000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		//enter existing employee name in Employee Name field
 		String employeeNameEntered = "nonexisting";
@@ -242,15 +254,15 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		Thread.sleep(1000);
 		ad.clickSearchBtn();
 		Thread.sleep(1000);
-		System.out.println("Record text: "+ad.getRecordTxt());
+	//	System.out.println("Record text: "+ad.getRecordTxt());
 		if(ad.getRecordTxt().equals("No Record Found"))
 				{
-					System.out.println("Output is as expected");
+					Log.info("Output is as expected");
 					softAssert.assertTrue(true);
 				}
 		else
 		{
-			System.out.println("Output is not as expected, it should be 'No Record Found'");
+			Log.error("Output is not as expected, it should be 'No Record Found'");
 			softAssert.assertTrue(false);
 		}
 		captureScreenshot(driver, "searchNonExistingEmployee_failed");
@@ -261,6 +273,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyStatusContentsInDropDown() throws InterruptedException
 	{
+		Log.info("Scenario: To verify options in Status drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -269,7 +282,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickUserStatus();
 		Thread.sleep(3000);
@@ -286,12 +299,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		}
 		if(enabledPresent && enabledPresent)
 		{
-			System.out.println("Both the status options are present in the dropdown");
+			Log.info("Both the status options are present in the dropdown");
 			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("Options are missing in the dropdown");
+			Log.error("Options are missing in the dropdown");
 			softAssert.assertTrue(false);
 		}		
 	}
@@ -299,6 +312,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForStatusEnabled() throws InterruptedException
 	{
+		Log.info("Scenario: To verify 'Enabled' option in Status drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -307,7 +321,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickUserStatus();
 		Thread.sleep(3000);
@@ -320,17 +334,17 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String searchResults = driver.findElement(By.xpath("//div/div[2]/div[3][@class='orangehrm-container']")).getAttribute("outerHTML");
 		if(searchResults.contains("Disabled"))
 		{
-			System.out.println("Results are not correct(Results for 'Disabled' status are also present which is unexpected)");
+			Log.error("Results are not correct(Results for 'Disabled' status are also present which is unexpected)");
 			softAssert.assertTrue(false);
 		}
 		else if(!searchResults.contains("Enabled") && !searchResults.contains("Disabled"))
 		{
-			System.out.println("No Record Found");
+			Log.info("No Record Found");
 			softAssert.assertTrue(true);
 		}		
 		else
 		{
-			System.out.println("Results are correct");
+			Log.info("Results are correct");
 			softAssert.assertTrue(true);
 		}	
 		softAssert.assertAll();
@@ -339,6 +353,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyResultsForStatusDisabled() throws InterruptedException
 	{
+		Log.info("Scenario: To verify 'Disabled' option in Status drop down menu");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -347,7 +362,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickUserStatus();
 		Thread.sleep(3000);
@@ -360,17 +375,17 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String searchResults = driver.findElement(By.xpath("//div/div[2]/div[3][@class='orangehrm-container']")).getAttribute("outerHTML");
 		if(searchResults.contains("Enabled"))
 		{
-			System.out.println("Results are not correct(Results for 'Enabled' status are also present which is unexpected)");
+			Log.error("Results are not correct(Results for 'Enabled' status are also present which is unexpected)");
 			softAssert.assertTrue(false);
 		}
 		else if(!searchResults.contains("Enabled") && !searchResults.contains("Disabled"))
 		{
-			System.out.println("No Record Found");
+			Log.info("No Record Found");
 			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("Results are correct");
+			Log.info("Results are correct");
 			softAssert.assertTrue(true);
 		}	
 		softAssert.assertAll();
@@ -379,6 +394,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void compareAddUserScreenshot() throws InterruptedException
 	{
+		Log.info("Scenario: Compare the screenshots after clicking on Add user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		//openBrowserWithUrl(driver);
@@ -387,7 +403,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+	//	System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickAddUser();
 		Thread.sleep(2000);
@@ -396,12 +412,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		boolean compareStatus = compareScreenshots(driver, "actualAddUserSC", "AdminAddUserESC");
 		if(compareStatus==true)
 		{
-			System.out.println("The Expected and Actual screenshots are different");
+			Log.error("The Expected and Actual screenshots are different");
 			softAssert.assertTrue(false);
 		}
 		else
 		{
-			System.out.println("addUser Screenshots are as expected ");
+			Log.info("addUser Screenshots are as expected ");
 			softAssert.assertTrue(true);
 		}
 		softAssert.assertAll();
@@ -411,6 +427,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyStatusAfterAddingNewUser() throws InterruptedException
 	{
+		Log.info("Scenario: To verify status after adding new user successfully");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		Faker faker = new Faker();
@@ -420,7 +437,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickAddUser();
 		Thread.sleep(2000);
@@ -432,7 +449,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		ad.elementNewUserStatus().sendKeys("e");
 		ad.elementNewUserStatus().sendKeys(Keys.RETURN);
 		String randomUsername = faker.name().username();
-		System.out.println("random username is : "+randomUsername);		
+		//System.out.println("random username is : "+randomUsername);		
 		ad.elementNewUsername().sendKeys(randomUsername);
 		ad.elementNewUserPass().sendKeys("skywalker@123");
 		ad.elementNewUserConfirmPass().sendKeys("skywalker@123");
@@ -451,12 +468,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		//System.out.println(pageAfterAddingUser);
 		if(pageAfterAddingUser.contains("Successfully Saved"))
 		{
-			System.out.println("Successfully Saved");
+			Log.info("Successfully Saved");
 			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("Not saved");
+			Log.error("Not saved");
 			softAssert.assertTrue(false);
 		}
 		softAssert.assertAll();
@@ -465,6 +482,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void verifyByAddingNewDuplicateUsername() throws InterruptedException
 	{
+		Log.info("Scenario: To verify error mesage when trying to create a duplicate user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		Faker faker = new Faker();
@@ -474,7 +492,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickAddUser();
 		Thread.sleep(2000);
@@ -509,12 +527,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String duplicateUsernameExistsTxt = driver.findElement(By.xpath("//div[4]/div/span[contains(@class, 'oxd-text' )]")).getText();
 		if (duplicateUsernameExistsTxt.equals("User already exist"))
 		{
-			System.out.println("Correct error msg for duplicate username is printed");
+			Log.info("Correct error msg for duplicate username is printed");
 			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("Expected error msg is 'User Already Exists' but printed error msg is '"+duplicateUsernameExistsTxt+"'");
+			Log.error("Expected error msg is 'User Already Exists' but printed error msg is '"+duplicateUsernameExistsTxt+"'");
 			softAssert.assertTrue(false);
 		}
 		softAssert.assertAll();
@@ -524,6 +542,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 	@Test
 	void deleteUser() throws InterruptedException
 	{
+		Log.info("Scenario: To verify status after successfully deleting user");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		Faker faker = new Faker();
@@ -533,7 +552,7 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		hm.clickLogin();
 		Thread.sleep(3000);
 		ad.clickAdmin();
-		System.out.println("Clicked on admin");
+		//System.out.println("Clicked on admin");
 		Thread.sleep(2000);
 		ad.clickAddUser();
 		Thread.sleep(2000);
@@ -573,12 +592,12 @@ public class TC_003_VerifyAdminModule extends BaseClass
 		String getPageSourceAfterDelete = driver.getPageSource();
 		if(getPageSourceAfterDelete.contains("Successfully Deleted") == true)
 		{
-			System.out.println("correct 'Successfully deleted' confirmation msg is printed");
+			Log.info("correct 'Successfully deleted' confirmation msg is printed");
 			softAssert.assertTrue(true);
 		}
 		else
 		{
-			System.out.println("'Successfull deleted' acknowledgement msg is not printed, probably user was not deleted successfully");
+			Log.error("'Successfull deleted' acknowledgement msg is not printed, probably user was not deleted successfully");
 			softAssert.assertTrue(false);
 		}
 			

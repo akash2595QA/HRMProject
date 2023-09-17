@@ -8,12 +8,14 @@ import org.openqa.selenium.JavascriptExecutor;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import com.hrm.pages.*;
+import com.hrm.utilities.Log;
 public class TC_002_VerifyHomeLoginWithCredentials extends BaseClass
 {
 	
 	@Test
 	void invalidPasswordAttempt() throws InterruptedException
 	{	
+		Log.info("Scenario: To verify the error message when invalid password is entered");
 		HomePage hm = new HomePage(driver);
 		String invalidPass = "adminwrong1";
 		String expectedErrorMsg = "Invalid credentials";
@@ -31,6 +33,7 @@ public class TC_002_VerifyHomeLoginWithCredentials extends BaseClass
 	@Test
 	void validPasswordAttempt() throws InterruptedException
 	{
+		Log.info("Scenario: To verify Snapshot of the Page after entering valid login details");
 		HomePage hm = new HomePage(driver);
 	//	openBrowserWithUrl(driver);
 		hm.setUsername(validUsername);
@@ -44,11 +47,11 @@ public class TC_002_VerifyHomeLoginWithCredentials extends BaseClass
 		boolean status = compareScreenshots(driver, screenshotFile, "DashboardESC");
 		if (status == true)
 		{
-			System.out.println("Dashboard Screenshot is not same as expected");
+			Log.error("Dashboard Screenshot is not same as expected");
 			softAssert.assertFalse(status);
 		}
 		else
-			System.out.println("Dashboard Screenshots is same");
+			Log.info("Dashboard Screenshots is same as expected");
 			softAssert.assertFalse(status);
 			softAssert.assertAll();
 	}

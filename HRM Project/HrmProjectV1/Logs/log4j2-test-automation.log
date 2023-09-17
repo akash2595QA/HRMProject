@@ -1,0 +1,47 @@
+[INFO ] 2023-09-17 04:47:46.466 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 04:49:42.485 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 04:49:58.900 [main] Log - Scenario: To verify Snapshot of the Homepage
+[INFO ] 2023-09-17 12:14:14.906 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 12:14:57.113 [main] Log - Setup Completed
+[INFO ] 2023-09-17 12:15:13.695 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 12:15:17.767 [main] Log - Scenario: To verify options in Status drop down menu
+[INFO ] 2023-09-17 12:15:26.359 [main] Log - Browser Closed
+[INFO ] 2023-09-17 12:17:16.336 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 12:17:19.863 [main] Log - Setup Completed
+[INFO ] 2023-09-17 12:17:30.448 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 12:17:34.473 [main] Log - Scenario: To verify options in Status drop down menu
+[INFO ] 2023-09-17 12:17:46.763 [main] Log - Both the status options are present in the dropdown
+[INFO ] 2023-09-17 12:17:49.483 [main] Log - Browser Closed
+[INFO ] 2023-09-17 12:42:08.650 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 12:42:12.286 [main] Log - Setup Completed
+[INFO ] 2023-09-17 12:42:23.021 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 12:42:27.065 [main] Log - Scenario: To validate username field when wntering less than 5 and more than 20 characters
+[INFO ] 2023-09-17 12:42:47.315 [main] Log - Browser Closed
+[INFO ] 2023-09-17 12:55:29.599 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
+[INFO ] 2023-09-17 12:55:29.605 [main] Log - setup for data driven invoked
+[INFO ] 2023-09-17 12:55:29.605 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 12:55:32.488 [main] Log - Setup Completed
+[INFO ] 2023-09-17 12:55:42.819 [main] Log - Opened Page Url
+[INFO ] 2023-09-17 12:55:49.168 [main] Log - tear down process starting
+[ERROR] 2023-09-17 12:55:51.209 [main] Log - Expected error message for three failed attempts is not printed
+[INFO ] 2023-09-17 12:55:52.132 [main] Log - Browser Closed
+[INFO ] 2023-09-17 13:13:02.581 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
+[INFO ] 2023-09-17 13:13:02.589 [main] Log - setup for data driven invoked
+[INFO ] 2023-09-17 13:13:02.590 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 13:13:15.900 [main] Log - Setup Completed
+[INFO ] 2023-09-17 13:13:23.435 [main] Log - Opened Page Url
+[ERROR] 2023-09-17 13:13:27.209 [main] Log - Expected error message for three failed attempts is not printed
+[ERROR] 2023-09-17 13:13:30.168 [main] Log - Expected error message for three failed attempts is not printed
+[ERROR] 2023-09-17 13:13:31.845 [main] Log - Expected error message for three failed attempts is not printed
+[INFO ] 2023-09-17 13:13:31.866 [main] Log - tear down process starting
+[INFO ] 2023-09-17 13:13:34.704 [main] Log - Browser Closed
+[INFO ] 2023-09-17 13:14:50.424 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
+[INFO ] 2023-09-17 13:14:50.430 [main] Log - setup for data driven invoked
+[INFO ] 2023-09-17 13:14:50.431 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-17 13:14:58.382 [main] Log - Setup Completed
+[INFO ] 2023-09-17 13:15:09.398 [main] Log - Opened Page Url
+[ERROR] 2023-09-17 13:15:19.811 [main] Log - Expected error message for three failed attempts is not printed
+[ERROR] 2023-09-17 13:15:21.694 [main] Log - Expected error message for three failed attempts is not printed
+[ERROR] 2023-09-17 13:15:23.298 [main] Log - Expected error message for three failed attempts is not printed
+[INFO ] 2023-09-17 13:15:23.342 [main] Log - tear down process starting
+[INFO ] 2023-09-17 13:15:27.899 [main] Log - Browser Closed

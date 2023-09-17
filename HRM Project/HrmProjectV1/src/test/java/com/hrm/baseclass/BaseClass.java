@@ -28,6 +28,7 @@ import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 import org.openqa.selenium.chrome.ChromeOptions;
+import com.hrm.utilities.Log;
 
 public class BaseClass 
 
@@ -35,6 +36,7 @@ public class BaseClass
 	public static WebDriver driver;
 	ReadConfig readConfig = new ReadConfig();
 	public SoftAssert softAssert = new SoftAssert();
+	public Log log = new Log();
 	
 	public String validUsername = readConfig.getUsername();
 	public String validPassword = readConfig.getPassword();
@@ -46,6 +48,7 @@ public class BaseClass
 	{
 		if (browserName.equalsIgnoreCase("chrome"))
 		{
+			Log.info("Entered Chrome browser setup");
 			ChromeOptions options = new ChromeOptions();
 			options.setBinary("C:\\Akash\\Downloads\\chrome-win64\\chrome-win64\\chrome.exe");
 			options.addArguments("--remote-allow-origins=*");//not recommended as it disables the same origin policy
@@ -55,19 +58,21 @@ public class BaseClass
 		
 		else if (browserName.equalsIgnoreCase("firefox"))
 		{
+			Log.info("Entered Firefox browser setup");
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		
 		else if (browserName.equalsIgnoreCase("edge"))
 		{
+			Log.info("Entered Edge browser setup");
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
-		
-		System.out.println("Setup Completed");
+		Log.info("Setup Completed");
 		driver.get(pageUrl);
 		driver.manage().window().maximize();
+		Log.info("Opened Page Url");
 		Thread.sleep(4000);
 	}
 	
@@ -100,11 +105,12 @@ public class BaseClass
 			{
 				e.printStackTrace();
 			}
-		System.out.println("Captured Screenshot");
+		Log.info("Captured Screenshot");
 	}
 	
 	public boolean compareScreenshots(WebDriver driver, String actualFile, String expectedFile)
 	{
+		Log.info("Comparing Screenshots");
 		AShot ashot = new AShot();
 		BufferedImage expectedImage = null;
 		try 
@@ -147,7 +153,6 @@ public class BaseClass
 		{
 			return false;
 		}
-		
 	}
 	
 	public boolean checkPageSourceContents(WebDriver driver, String[] arr)
@@ -164,6 +169,7 @@ public class BaseClass
 	
 	public void scrollTillEnd()
 	{
+		Log.info("Scrolling down");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 	}
@@ -181,6 +187,7 @@ public class BaseClass
 				e.printStackTrace();
 			}
 		driver.close();
+		Log.info("Browser Closed");
 	}
 	
 }

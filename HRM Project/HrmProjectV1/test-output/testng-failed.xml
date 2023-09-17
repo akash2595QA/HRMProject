@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
+      <class name="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts">
         <methods>
-          <include name="validPasswordAttempt"/>
-          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verifyLoginWithThreeWrongAttempts" invocation-numbers="0 1 2"/>
+          <include name="setupBeforeTest"/>
         </methods>
-      </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
+      </class> <!-- com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

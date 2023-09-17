@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import com.hrm.pages.AdminPage;
 import com.hrm.pages.HomePage;
+import com.hrm.utilities.Log;
 import com.hrm.baseclass.BaseClass;
 
 public class TC_005_VerifyLogoutModule extends BaseClass
@@ -17,6 +18,7 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 	@Test
 	void verifyContentsOfTheUserProfileBtn() throws InterruptedException
 	{
+		Log.info("Scenario: To verify contents on clicking User profile option");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		Faker faker = new Faker();
@@ -32,12 +34,12 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 		boolean chkStatus = checkPageSourceContents(driver, strArr);
 		if(chkStatus==false)
 		{
-			System.out.println("The User Profile dropdown does not contain all or some of these options {\"About\", \"Support\", \"Change Password\", \"Logout\"}");
+			Log.error("The User Profile dropdown does not contain all or some of these options {\"About\", \"Support\", \"Change Password\", \"Logout\"}");
 			softAssert.assertTrue(false);
 		}
 		else
 		{
-			System.out.println("The User dropdown contains all the expected options");
+			Log.info("The User dropdown contains all the expected options");
 			softAssert.assertTrue(true);
 		}
 		softAssert.assertAll();
@@ -47,6 +49,7 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 	@Test
 	void verifyLogout() throws InterruptedException
 	{
+		Log.info("Scenario: To verify that the logout function works correctly");
 		HomePage hm = new HomePage(driver);
 		AdminPage ad = new AdminPage(driver);
 		Faker faker = new Faker();
@@ -65,12 +68,12 @@ public class TC_005_VerifyLogoutModule extends BaseClass
 		String actualPageUrlAfterLogout = driver.getCurrentUrl();
 		if(actualPageUrlAfterLogout.equals(expectedPageUrlAfterLogout))
 		{
-			System.out.println("Successfully logged out");
+			Log.info("Successfully logged out");
 			softAssert.assertTrue(true);			
 		}
 		else
 		{
-			System.out.println("Unsuccessfull logout");
+			Log.error("Unsuccessfull logout");
 			softAssert.assertTrue(false);
 		}
 		softAssert.assertAll();
