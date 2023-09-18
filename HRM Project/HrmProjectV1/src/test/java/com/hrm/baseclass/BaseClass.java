@@ -59,7 +59,7 @@ public class BaseClass
 		File file = new File("extent-report.html");
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(file);
 		extent.attachReporter(sparkReporter);
-		Log.info("Completed  ExtentReport Setup");
+		Log.info("Completed ExtentReport Setup");
 	}
 	
 	@BeforeMethod
@@ -196,7 +196,7 @@ public class BaseClass
 	
 	// This returns Base64 of the screenshot
 	public static String screenShotCapture() {
-		Log.info("Capturing Base64 sceenshot");
+		Log.info("Capturing Base64 screenshot");
 		TakesScreenshot takeScreenshot = (TakesScreenshot) driver;
 		String base64Code = takeScreenshot.getScreenshotAs(OutputType.BASE64);
 		return base64Code;

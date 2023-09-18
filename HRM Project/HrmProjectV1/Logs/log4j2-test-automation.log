@@ -1,495 +1,202 @@
-[INFO ] 2023-09-17 18:10:11.007 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:11:14.026 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:11:22.813 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:11:27.579 [main] Log - Scenario: To verify Snapshot of the Homepage
-[INFO ] 2023-09-17 18:11:34.150 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 18:11:34.150 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 18:11:36.600 [main] Log - Screenshot is  not as expected
-[INFO ] 2023-09-17 18:11:36.644 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:11:37.867 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:11:40.235 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:11:43.536 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:12:01.032 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:12:05.040 [main] Log - Scenario: To verify the error message when invalid password is entered
-[INFO ] 2023-09-17 18:12:14.007 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:12:17.850 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:12:21.379 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:12:38.131 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:12:42.137 [main] Log - Scenario: To verify Snapshot of the Page after entering valid login details
-[INFO ] 2023-09-17 18:12:53.330 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 18:12:53.330 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 18:12:57.431 [main] Log - Dashboard Screenshot is not same as expected
-[INFO ] 2023-09-17 18:12:59.188 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:13:00.770 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:13:07.395 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:13:09.963 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:13:25.447 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:13:29.453 [main] Log - Scenario: To verify status after successfully deleting user
-[INFO ] 2023-09-17 18:13:37.934 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:13:42.494 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:13:44.579 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:13:58.567 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:14:02.578 [main] Log - Scenario: To verify approriate tabs are present on the Admin page
-[INFO ] 2023-09-17 18:14:06.530 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:14:09.807 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:14:12.717 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:14:30.094 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:14:34.099 [main] Log - Scenario: To verify 'Enabled' option in Status drop down menu
-[INFO ] 2023-09-17 18:14:51.232 [main] Log - Results are correct
-[INFO ] 2023-09-17 18:14:52.238 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:14:53.523 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:14:55.492 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:15:07.607 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:15:11.615 [main] Log - Scenario: To verify 'Disabled' option in Status drop down menu
-[INFO ] 2023-09-17 18:15:27.793 [main] Log - No Record Found
-[INFO ] 2023-09-17 18:15:28.819 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:15:29.701 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:15:31.696 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:15:42.674 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:15:46.691 [main] Log - Scenario: To verify search results by selecting ESS option from User Role menu
-[INFO ] 2023-09-17 18:15:55.369 [main] Log - Results are correct
-[INFO ] 2023-09-17 18:15:56.373 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:15:57.461 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:15:58.910 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:16:12.473 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:16:16.492 [main] Log - Scenario: To verify search results by selecting Admin option from User Role menu
-[INFO ] 2023-09-17 18:16:25.324 [main] Log - Results are correct
-[INFO ] 2023-09-17 18:16:26.391 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:16:27.511 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:16:30.155 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:16:44.784 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:16:48.800 [main] Log - Scenario: To verify the options present in User Role drop down menu
-[INFO ] 2023-09-17 18:16:56.178 [main] Log - Both the options are present
-[INFO ] 2023-09-17 18:16:57.192 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:16:58.402 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:16:59.847 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:17:10.965 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:17:14.983 [main] Log - Scenario: To verify status after adding new user successfully
-[INFO ] 2023-09-17 18:17:32.717 [main] Log - Successfully Saved
-[INFO ] 2023-09-17 18:17:33.723 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:17:34.641 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:17:36.244 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:17:47.149 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:17:51.242 [main] Log - Scenario: To verify search results for existing username search
-[INFO ] 2023-09-17 18:17:57.687 [main] Log - Scrolling down
-[INFO ] 2023-09-17 18:17:59.756 [main] Log - Correct search results are displayed
-[INFO ] 2023-09-17 18:18:00.760 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:18:01.715 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:18:03.732 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:18:13.265 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:18:17.276 [main] Log - Scenario: To verify search results for existing Employee Name
-[INFO ] 2023-09-17 18:18:33.950 [main] Log - Correct record for the Employee name is displayed
-[INFO ] 2023-09-17 18:18:34.955 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:18:35.878 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:18:37.682 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:18:49.052 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:18:53.060 [main] Log - Scenario: To verify search results for non exisitng Employee name
-[ERROR] 2023-09-17 18:19:02.054 [main] Log - Output is not as expected, it should be 'No Record Found'
-[INFO ] 2023-09-17 18:19:02.055 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:19:03.125 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 18:19:04.133 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:19:04.790 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:19:06.595 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:19:17.030 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:19:21.045 [main] Log - Scenario: To verify options in Status drop down menu
-[INFO ] 2023-09-17 18:19:30.783 [main] Log - Both the status options are present in the dropdown
-[INFO ] 2023-09-17 18:19:31.791 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:19:32.738 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:19:33.897 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:19:44.499 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:19:48.511 [main] Log - Scenario: Compare the screenshots after clicking on Add user
-[INFO ] 2023-09-17 18:19:59.005 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 18:20:01.019 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 18:20:02.163 [main] Log - The Expected and Actual screenshots are different
-[INFO ] 2023-09-17 18:20:02.163 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:20:03.482 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:20:05.734 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:20:07.496 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:20:18.743 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:20:22.753 [main] Log - Scenario: To verify error mesage when trying to create a duplicate user
-[ERROR] 2023-09-17 18:20:53.169 [main] Log - Expected error msg is 'User Already Exists' but printed error msg is 'Already exists'
-[INFO ] 2023-09-17 18:20:53.170 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:20:54.393 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:20:55.464 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:20:58.110 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:21:13.511 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:21:17.527 [main] Log - To validate adding user keeping Employee name field blank
-[ERROR] 2023-09-17 18:21:39.324 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 18:21:39.324 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:21:40.600 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:21:42.393 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:21:45.823 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:21:58.221 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:22:02.230 [main] Log - Scenario: To validate Employee name field by adding less than 5 characters
-[ERROR] 2023-09-17 18:22:23.482 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 18:22:23.482 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:22:24.696 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:22:26.098 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:22:29.015 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:22:42.384 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:22:46.403 [main] Log - Scenario: To validate Username field by keeping it empty when adding new user
-[ERROR] 2023-09-17 18:23:05.330 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 18:23:05.330 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:23:06.504 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:23:07.872 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:23:09.444 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:23:20.854 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:23:24.860 [main] Log - Scenario: To validate Username field by adding non alphanumeric data
-[ERROR] 2023-09-17 18:23:42.772 [main] Log - Expected error message for non Alphanumeric data entry is not displayed
-[INFO ] 2023-09-17 18:23:42.772 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:23:43.962 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:23:44.678 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:23:46.093 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:23:57.196 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:24:01.213 [main] Log - Scenario: To validate username field when wntering less than 5 and more than 20 characters
-[ERROR] 2023-09-17 18:24:17.927 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 18:24:17.928 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 18:24:19.393 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 18:24:19.393 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:24:20.599 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:24:21.304 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:24:22.771 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:24:33.620 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:24:37.623 [main] Log - Scenario: To verify behavior of the Login after two failed attempts
-[ERROR] 2023-09-17 18:24:42.409 [main] Log - Expected error message for two failed attempts is not printed
-[INFO ] 2023-09-17 18:24:42.409 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:24:43.575 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:24:44.289 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:24:45.632 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:24:57.448 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:25:01.451 [main] Log - Scenario: To verify contents on clicking User profile option
-[INFO ] 2023-09-17 18:25:09.793 [main] Log - The User dropdown contains all the expected options
-[INFO ] 2023-09-17 18:25:10.806 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:25:11.570 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:25:13.209 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:25:23.997 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:25:28.007 [main] Log - Scenario: To verify that the logout function works correctly
-[INFO ] 2023-09-17 18:25:38.858 [main] Log - Successfully logged out
-[INFO ] 2023-09-17 18:25:39.879 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:25:41.313 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:25:42.920 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:25:53.509 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 18:25:57.518 [main] Log - Scenario: To verify approriate tabs are present on the Dashboard Page
-[INFO ] 2023-09-17 18:26:05.721 [main] Log - Dashboard module contains all the features
-[INFO ] 2023-09-17 18:26:06.731 [main] Log - Browser Closed
-[INFO ] 2023-09-17 18:26:08.683 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
-[INFO ] 2023-09-17 18:26:08.683 [main] Log - setup for data driven invoked
-[INFO ] 2023-09-17 18:26:08.683 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 18:26:10.878 [main] Log - Setup Completed
-[INFO ] 2023-09-17 18:26:20.641 [main] Log - Opened Page Url
-[ERROR] 2023-09-17 18:26:23.878 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 18:26:23.878 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 18:26:25.642 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 18:26:25.642 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 18:26:27.286 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 18:26:27.287 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 18:26:27.426 [main] Log - tear down process starting
-[INFO ] 2023-09-17 18:26:29.977 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:15:11.812 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
-[INFO ] 2023-09-17 19:15:11.817 [main] Log - setup for data driven invoked
-[INFO ] 2023-09-17 19:15:11.817 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:16:07.909 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:16:44.405 [main] Log - Opened Page Url
-[ERROR] 2023-09-17 19:16:57.447 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:16:57.767 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 19:17:00.341 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:17:00.345 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 19:17:02.697 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:17:02.697 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 19:17:02.879 [main] Log - tear down process starting
-[INFO ] 2023-09-17 19:17:07.171 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:27:22.884 [main] Log - Started ExtentReport setup
-[INFO ] 2023-09-17 19:27:23.254 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
-[INFO ] 2023-09-17 19:27:23.254 [main] Log - setup for data driven invoked
-[INFO ] 2023-09-17 19:27:23.255 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:27:49.098 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:27:55.791 [main] Log - Opened Page Url
-[ERROR] 2023-09-17 19:27:59.448 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:27:59.516 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 19:28:01.115 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:28:01.117 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 19:28:02.966 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:28:02.966 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 19:28:03.182 [main] Log - tear down process starting
-[INFO ] 2023-09-17 19:28:08.589 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:29:59.731 [main] Log - Started ExtentReport setup
-[INFO ] 2023-09-17 19:30:00.154 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
-[INFO ] 2023-09-17 19:30:00.154 [main] Log - setup for data driven invoked
-[INFO ] 2023-09-17 19:30:00.155 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:30:04.271 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:30:14.647 [main] Log - Opened Page Url
-[ERROR] 2023-09-17 19:30:17.979 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:30:18.003 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 19:30:19.792 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:30:19.793 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 19:30:21.548 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 19:30:21.548 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 19:30:21.707 [main] Log - tear down process starting
-[INFO ] 2023-09-17 19:30:25.339 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:32:54.125 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:32:58.534 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:33:09.971 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:33:15.110 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:33:15.130 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:33:22.627 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:33:39.594 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:33:45.431 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:33:45.464 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:33:57.925 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:34:36.383 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:34:41.438 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:34:41.586 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:34:51.622 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:35:09.065 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:35:14.110 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:35:14.180 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:35:37.405 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:36:01.661 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:36:06.683 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:36:06.700 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:36:23.431 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:41:55.110 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:41:59.593 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:42:08.846 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:42:12.903 [main] Log - Scenario: To verify Snapshot of the Homepage
-[INFO ] 2023-09-17 19:42:13.671 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 19:42:13.672 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 19:42:17.156 [main] Log - Screenshot is  not as expected
-[INFO ] 2023-09-17 19:42:17.178 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 19:42:18.345 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:42:25.015 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:42:26.146 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:42:35.244 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:42:40.289 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:42:40.318 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:42:41.876 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:42:55.431 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:43:00.470 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:43:00.599 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:43:04.870 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:45:34.151 [main] Log - Completed  ExtentReport Setup
-[INFO ] 2023-09-17 19:45:34.218 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:45:37.385 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:45:47.128 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:45:51.201 [main] Log - Scenario: To verify Snapshot of the Homepage
-[INFO ] 2023-09-17 19:45:51.734 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 19:45:51.734 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 19:45:54.968 [main] Log - Screenshot is  not as expected
-[INFO ] 2023-09-17 19:45:54.984 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 19:45:56.215 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:45:58.221 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:45:59.433 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:46:07.869 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:46:12.894 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:46:12.927 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:46:14.735 [main] Log - Setup Completed
-[INFO ] 2023-09-17 19:46:34.818 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 19:46:39.849 [main] Log - Browser Closed
-[INFO ] 2023-09-17 19:46:40.083 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 19:46:46.395 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:01:08.358 [main] Log - Completed  ExtentReport Setup
-[INFO ] 2023-09-17 20:01:08.569 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:01:33.259 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:01:40.968 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:01:45.571 [main] Log - Scenario: To verify contents on clicking User profile option
-[INFO ] 2023-09-17 20:01:56.674 [main] Log - The User dropdown contains all the expected options
-[INFO ] 2023-09-17 20:01:57.720 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:02:00.323 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:02:02.094 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:02:11.994 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:02:16.005 [main] Log - Scenario: To verify that the logout function works correctly
-[INFO ] 2023-09-17 20:02:27.660 [main] Log - Successfully logged out
-[INFO ] 2023-09-17 20:02:28.669 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:04:54.838 [main] Log - Completed  ExtentReport Setup
-[INFO ] 2023-09-17 20:04:55.063 [main] Log - Completed ExtentReport Setup
-[INFO ] 2023-09-17 20:04:55.205 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:04:58.149 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:05:10.578 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:05:14.624 [main] Log - Scenario: To verify Snapshot of the Homepage
-[INFO ] 2023-09-17 20:05:15.008 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 20:05:15.008 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 20:05:21.615 [main] Log - Screenshot is  not as expected
-[INFO ] 2023-09-17 20:05:21.637 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:05:22.902 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:05:24.407 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:05:25.819 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:05:35.647 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:05:39.668 [main] Log - Scenario: To verify the error message when invalid password is entered
-[INFO ] 2023-09-17 20:05:42.438 [main] Log - Correct error message is displayed
-[INFO ] 2023-09-17 20:05:43.451 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:05:44.161 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:05:45.499 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:05:55.569 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:05:59.586 [main] Log - Scenario: To verify Snapshot of the Page after entering valid login details
-[INFO ] 2023-09-17 20:06:04.699 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 20:06:04.700 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 20:06:08.823 [main] Log - Dashboard Screenshot is not same as expected
-[INFO ] 2023-09-17 20:06:08.823 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:06:09.999 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:06:11.717 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:06:14.139 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:06:23.046 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:06:27.056 [main] Log - Scenario: To verify status after successfully deleting user
-[INFO ] 2023-09-17 20:06:56.460 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:06:56.664 [main] Log - correct 'Successfully deleted' confirmation msg is printed
-[INFO ] 2023-09-17 20:06:57.681 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:06:58.845 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:07:02.284 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:07:15.137 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:07:19.149 [main] Log - Scenario: To verify approriate tabs are present on the Admin page
-[INFO ] 2023-09-17 20:07:27.250 [main] Log - Admin module contains all the features
-[INFO ] 2023-09-17 20:07:28.268 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:07:29.728 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:07:31.996 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:07:41.111 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:07:45.127 [main] Log - Scenario: To verify 'Enabled' option in Status drop down menu
-[INFO ] 2023-09-17 20:08:00.047 [main] Log - Results are correct
-[INFO ] 2023-09-17 20:08:01.055 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:08:01.992 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:08:03.441 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:08:13.891 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:08:17.894 [main] Log - Scenario: To verify 'Disabled' option in Status drop down menu
-[INFO ] 2023-09-17 20:08:34.341 [main] Log - No Record Found
-[INFO ] 2023-09-17 20:08:35.363 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:08:36.265 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:08:38.043 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:08:52.522 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:08:56.536 [main] Log - Scenario: To verify search results by selecting ESS option from User Role menu
-[INFO ] 2023-09-17 20:09:18.519 [main] Log - Results are correct
-[INFO ] 2023-09-17 20:09:19.525 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:09:21.720 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:09:25.058 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:09:38.623 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:09:42.634 [main] Log - Scenario: To verify search results by selecting Admin option from User Role menu
-[INFO ] 2023-09-17 20:09:52.603 [main] Log - Results are correct
-[INFO ] 2023-09-17 20:09:53.631 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:09:55.028 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:09:56.959 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:10:09.616 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:10:13.621 [main] Log - Scenario: To verify the options present in User Role drop down menu
-[INFO ] 2023-09-17 20:10:21.033 [main] Log - Both the options are present
-[INFO ] 2023-09-17 20:10:22.041 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:10:22.566 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:10:24.260 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:10:35.554 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:10:39.567 [main] Log - Scenario: To verify status after adding new user successfully
-[INFO ] 2023-09-17 20:10:57.951 [main] Log - Successfully Saved
-[INFO ] 2023-09-17 20:10:58.957 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:10:59.974 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:11:02.142 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:11:15.525 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:11:19.534 [main] Log - Scenario: To verify search results for existing username search
-[INFO ] 2023-09-17 20:11:27.009 [main] Log - Scrolling down
-[INFO ] 2023-09-17 20:11:29.125 [main] Log - Correct search results are displayed
-[INFO ] 2023-09-17 20:11:30.140 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:11:30.831 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:11:32.183 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:11:41.584 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:11:45.599 [main] Log - Scenario: To verify search results for existing Employee Name
-[INFO ] 2023-09-17 20:12:02.649 [main] Log - Correct record for the Employee name is displayed
-[INFO ] 2023-09-17 20:12:03.660 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:12:04.385 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:12:06.025 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:12:16.261 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:12:20.280 [main] Log - Scenario: To verify search results for non exisitng Employee name
-[ERROR] 2023-09-17 20:12:30.120 [main] Log - Output is not as expected, it should be 'No Record Found'
-[INFO ] 2023-09-17 20:12:30.120 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:12:30.643 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 20:12:31.660 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:12:32.338 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:12:34.616 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:12:45.675 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:12:49.686 [main] Log - Scenario: To verify options in Status drop down menu
-[INFO ] 2023-09-17 20:13:00.662 [main] Log - Both the status options are present in the dropdown
-[INFO ] 2023-09-17 20:13:01.678 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:13:02.377 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:13:03.857 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:13:17.777 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:13:21.788 [main] Log - Scenario: Compare the screenshots after clicking on Add user
-[INFO ] 2023-09-17 20:13:33.624 [main] Log - Captured Screenshot
-[INFO ] 2023-09-17 20:13:35.635 [main] Log - Comparing Screenshots
-[ERROR] 2023-09-17 20:13:36.990 [main] Log - The Expected and Actual screenshots are different
-[INFO ] 2023-09-17 20:13:36.991 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:13:38.200 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:13:39.436 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:13:41.907 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:13:54.207 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:13:58.216 [main] Log - Scenario: To verify error mesage when trying to create a duplicate user
-[ERROR] 2023-09-17 20:14:27.879 [main] Log - Expected error msg is 'User Already Exists' but printed error msg is 'Already exists'
-[INFO ] 2023-09-17 20:14:27.880 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:14:29.027 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:14:29.676 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:14:31.437 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:14:41.926 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:14:45.936 [main] Log - To validate adding user keeping Employee name field blank
-[ERROR] 2023-09-17 20:15:04.000 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 20:15:04.001 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:15:05.148 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:15:05.903 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:15:07.083 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:15:16.943 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:15:20.962 [main] Log - Scenario: To validate Employee name field by adding less than 5 characters
-[ERROR] 2023-09-17 20:15:39.152 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 20:15:39.153 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:15:40.296 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:15:40.915 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:15:42.864 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:15:52.450 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:15:56.460 [main] Log - Scenario: To validate Username field by keeping it empty when adding new user
-[ERROR] 2023-09-17 20:16:13.479 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 20:16:13.480 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:16:14.628 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:16:15.245 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:16:16.621 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:16:27.748 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:16:31.755 [main] Log - Scenario: To validate Username field by adding non alphanumeric data
-[ERROR] 2023-09-17 20:16:50.214 [main] Log - Expected error message for non Alphanumeric data entry is not displayed
-[INFO ] 2023-09-17 20:16:50.215 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:16:51.416 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:16:52.019 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:16:53.456 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:17:03.728 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:17:07.740 [main] Log - Scenario: To validate username field when wntering less than 5 and more than 20 characters
-[ERROR] 2023-09-17 20:17:24.414 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 20:17:24.414 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 20:17:25.952 [main] Log - Expected error message is not displayed: 
-[INFO ] 2023-09-17 20:17:25.953 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:17:27.156 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:17:27.769 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:17:29.460 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:17:39.211 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:17:43.215 [main] Log - Scenario: To verify behavior of the Login after two failed attempts
-[ERROR] 2023-09-17 20:17:48.110 [main] Log - Expected error message for two failed attempts is not printed
-[INFO ] 2023-09-17 20:17:48.110 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:17:49.297 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:17:49.964 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:17:51.141 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:18:00.661 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:18:04.675 [main] Log - Scenario: To verify contents on clicking User profile option
-[INFO ] 2023-09-17 20:18:12.657 [main] Log - The User dropdown contains all the expected options
-[INFO ] 2023-09-17 20:18:13.665 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:18:14.515 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:18:15.683 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:18:25.538 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:18:29.546 [main] Log - Scenario: To verify that the logout function works correctly
-[INFO ] 2023-09-17 20:18:40.329 [main] Log - Successfully logged out
-[INFO ] 2023-09-17 20:18:41.343 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:18:42.021 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:18:43.448 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:18:53.546 [main] Log - Opened Page Url
-[INFO ] 2023-09-17 20:18:57.556 [main] Log - Scenario: To verify approriate tabs are present on the Dashboard Page
-[INFO ] 2023-09-17 20:19:07.033 [main] Log - Dashboard module contains all the features
-[INFO ] 2023-09-17 20:19:08.048 [main] Log - Browser Closed
-[INFO ] 2023-09-17 20:19:09.339 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
-[INFO ] 2023-09-17 20:19:09.339 [main] Log - setup for data driven invoked
-[INFO ] 2023-09-17 20:19:09.339 [main] Log - Entered Chrome browser setup
-[INFO ] 2023-09-17 20:19:10.753 [main] Log - Setup Completed
-[INFO ] 2023-09-17 20:19:21.344 [main] Log - Opened Page Url
-[ERROR] 2023-09-17 20:19:24.857 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 20:19:24.857 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 20:19:26.524 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 20:19:26.525 [main] Log - Capturing Base64 sceenshot
-[ERROR] 2023-09-17 20:19:28.157 [main] Log - Expected error message for three failed attempts is not printed
-[INFO ] 2023-09-17 20:19:28.158 [main] Log - Capturing Base64 sceenshot
-[INFO ] 2023-09-17 20:19:28.286 [main] Log - tear down process starting
-[INFO ] 2023-09-17 20:19:30.937 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:32:23.483 [main] Log - Completed ExtentReport Setup
+[INFO ] 2023-09-18 00:32:24.986 [main] Log - Completed ExtentReport Setup
+[INFO ] 2023-09-18 00:32:25.755 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:50:38.742 [main] Log - Completed ExtentReport Setup
+[INFO ] 2023-09-18 00:50:39.563 [main] Log - Completed ExtentReport Setup
+[INFO ] 2023-09-18 00:50:40.008 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:52:20.500 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:52:36.390 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:52:41.067 [main] Log - Scenario: To verify Snapshot of the Homepage
+[INFO ] 2023-09-18 00:55:08.601 [main] Log - Completed ExtentReport Setup
+[INFO ] 2023-09-18 00:55:09.633 [main] Log - Completed ExtentReport Setup
+[INFO ] 2023-09-18 00:55:10.072 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:55:23.869 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:55:36.368 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:55:40.697 [main] Log - Scenario: To verify Snapshot of the Homepage
+[INFO ] 2023-09-18 00:55:42.551 [main] Log - Captured Screenshot
+[INFO ] 2023-09-18 00:55:42.552 [main] Log - Comparing Screenshots
+[ERROR] 2023-09-18 00:55:54.508 [main] Log - Screenshot is  not as expected
+[INFO ] 2023-09-18 00:55:54.761 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 00:55:56.277 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:56:01.811 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:56:04.795 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:56:16.434 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:56:20.546 [main] Log - Scenario: To verify the error message when invalid password is entered
+[INFO ] 2023-09-18 00:56:27.478 [main] Log - Correct error message is displayed
+[INFO ] 2023-09-18 00:56:28.513 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:56:30.442 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:56:33.978 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:56:43.149 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:56:47.179 [main] Log - Scenario: To verify Snapshot of the Page after entering valid login details
+[INFO ] 2023-09-18 00:56:52.722 [main] Log - Captured Screenshot
+[INFO ] 2023-09-18 00:56:52.723 [main] Log - Comparing Screenshots
+[ERROR] 2023-09-18 00:57:02.474 [main] Log - Dashboard Screenshot is not same as expected
+[INFO ] 2023-09-18 00:57:02.475 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 00:57:04.192 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:57:08.315 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:57:12.639 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:57:25.775 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:57:29.783 [main] Log - Scenario: To verify status after successfully deleting user
+[INFO ] 2023-09-18 00:58:01.491 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 00:58:01.725 [main] Log - correct 'Successfully deleted' confirmation msg is printed
+[INFO ] 2023-09-18 00:58:02.735 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:58:04.175 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:58:07.528 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:58:17.628 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:58:21.649 [main] Log - Scenario: To verify approriate tabs are present on the Admin page
+[INFO ] 2023-09-18 00:58:30.457 [main] Log - Admin module contains all the features
+[INFO ] 2023-09-18 00:58:31.469 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:58:34.710 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:58:38.638 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:58:50.355 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:58:54.373 [main] Log - Scenario: To verify 'Enabled' option in Status drop down menu
+[INFO ] 2023-09-18 00:59:15.359 [main] Log - Results are correct
+[INFO ] 2023-09-18 00:59:16.374 [main] Log - Browser Closed
+[INFO ] 2023-09-18 00:59:18.442 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 00:59:21.632 [main] Log - Setup Completed
+[INFO ] 2023-09-18 00:59:43.166 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 00:59:47.178 [main] Log - Scenario: To verify 'Disabled' option in Status drop down menu
+[INFO ] 2023-09-18 01:00:14.206 [main] Log - No Record Found
+[INFO ] 2023-09-18 01:00:15.226 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:00:17.502 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:00:20.792 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:00:31.712 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:00:35.736 [main] Log - Scenario: To verify search results by selecting ESS option from User Role menu
+[INFO ] 2023-09-18 01:00:53.901 [main] Log - Results are correct
+[INFO ] 2023-09-18 01:00:54.926 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:00:57.657 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:01:00.293 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:01:12.334 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:01:16.351 [main] Log - Scenario: To verify search results by selecting Admin option from User Role menu
+[INFO ] 2023-09-18 01:01:31.642 [main] Log - Results are correct
+[INFO ] 2023-09-18 01:01:32.662 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:01:34.356 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:01:37.335 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:01:52.808 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:01:56.833 [main] Log - Scenario: To verify the options present in User Role drop down menu
+[INFO ] 2023-09-18 01:02:04.768 [main] Log - Both the options are present
+[INFO ] 2023-09-18 01:02:05.774 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:02:10.515 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:02:14.340 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:02:24.763 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:02:28.774 [main] Log - Scenario: To verify status after adding new user successfully
+[INFO ] 2023-09-18 01:02:50.403 [main] Log - Successfully Saved
+[INFO ] 2023-09-18 01:02:51.417 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:02:53.602 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:02:56.263 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:03:06.656 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:03:10.674 [main] Log - Scenario: To verify search results for existing username search
+[INFO ] 2023-09-18 01:03:19.313 [main] Log - Scrolling down
+[INFO ] 2023-09-18 01:03:21.464 [main] Log - Correct search results are displayed
+[INFO ] 2023-09-18 01:03:22.517 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:03:24.156 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:03:26.155 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:03:35.879 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:03:39.899 [main] Log - Scenario: To verify search results for existing Employee Name
+[INFO ] 2023-09-18 01:03:58.464 [main] Log - Correct record for the Employee name is displayed
+[INFO ] 2023-09-18 01:03:59.508 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:04:01.069 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:04:03.965 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:04:18.351 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:04:22.363 [main] Log - Scenario: To verify search results for non exisitng Employee name
+[ERROR] 2023-09-18 01:04:33.730 [main] Log - Output is not as expected, it should be 'No Record Found'
+[INFO ] 2023-09-18 01:04:33.731 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:04:34.279 [main] Log - Captured Screenshot
+[INFO ] 2023-09-18 01:04:35.297 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:04:36.234 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:04:38.845 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:04:49.990 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:04:54.011 [main] Log - Scenario: To verify options in Status drop down menu
+[INFO ] 2023-09-18 01:05:05.420 [main] Log - Both the status options are present in the dropdown
+[INFO ] 2023-09-18 01:05:06.539 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:05:07.922 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:05:10.181 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:05:20.575 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:05:24.593 [main] Log - Scenario: Compare the screenshots after clicking on Add user
+[INFO ] 2023-09-18 01:05:37.307 [main] Log - Captured Screenshot
+[INFO ] 2023-09-18 01:05:39.345 [main] Log - Comparing Screenshots
+[ERROR] 2023-09-18 01:05:41.594 [main] Log - The Expected and Actual screenshots are different
+[INFO ] 2023-09-18 01:05:41.595 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:05:42.848 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:05:43.783 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:05:46.417 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:06:00.584 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:06:04.588 [main] Log - Scenario: To verify error mesage when trying to create a duplicate user
+[ERROR] 2023-09-18 01:06:40.987 [main] Log - Expected error msg is 'User Already Exists' but printed error msg is 'Already exists'
+[INFO ] 2023-09-18 01:06:40.987 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:06:42.207 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:06:43.731 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:06:46.920 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:06:59.229 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:07:03.240 [main] Log - To validate adding user keeping Employee name field blank
+[ERROR] 2023-09-18 01:07:27.288 [main] Log - Expected error message is not displayed: 
+[INFO ] 2023-09-18 01:07:27.288 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:07:28.523 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:07:30.093 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:07:34.304 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:07:44.951 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:07:48.970 [main] Log - Scenario: To validate Employee name field by adding less than 5 characters
+[ERROR] 2023-09-18 01:08:11.396 [main] Log - Expected error message is not displayed: 
+[INFO ] 2023-09-18 01:08:11.397 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:08:12.657 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:08:13.657 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:08:16.327 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:08:29.349 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:08:33.370 [main] Log - Scenario: To validate Username field by keeping it empty when adding new user
+[ERROR] 2023-09-18 01:08:52.933 [main] Log - Expected error message is not displayed: 
+[INFO ] 2023-09-18 01:08:52.934 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:08:54.219 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:08:55.414 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:08:58.194 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:09:10.243 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:09:14.271 [main] Log - Scenario: To validate Username field by adding non alphanumeric data
+[ERROR] 2023-09-18 01:09:37.394 [main] Log - Expected error message for non Alphanumeric data entry is not displayed
+[INFO ] 2023-09-18 01:09:37.395 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:09:38.900 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:09:43.897 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:09:47.035 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:09:58.503 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:10:02.518 [main] Log - Scenario: To validate username field when wntering less than 5 and more than 20 characters
+[ERROR] 2023-09-18 01:10:25.314 [main] Log - Expected error message is not displayed: 
+[INFO ] 2023-09-18 01:10:25.314 [main] Log - Capturing Base64 screenshot
+[ERROR] 2023-09-18 01:10:27.595 [main] Log - Expected error message is not displayed: 
+[INFO ] 2023-09-18 01:10:27.595 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:10:28.852 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:10:30.028 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:10:33.138 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:10:45.793 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:10:49.805 [main] Log - Scenario: To verify behavior of the Login after two failed attempts
+[ERROR] 2023-09-18 01:10:56.382 [main] Log - Expected error message for two failed attempts is not printed
+[INFO ] 2023-09-18 01:10:56.383 [main] Log - Capturing Base64 screenshot
+[INFO ] 2023-09-18 01:10:57.668 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:10:58.913 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:11:01.664 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:11:12.641 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:11:16.654 [main] Log - Scenario: To verify contents on clicking User profile option
+[INFO ] 2023-09-18 01:11:26.218 [main] Log - The User dropdown contains all the expected options
+[INFO ] 2023-09-18 01:11:27.240 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:11:29.099 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:11:31.995 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:11:41.680 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:11:45.704 [main] Log - Scenario: To verify that the logout function works correctly
+[INFO ] 2023-09-18 01:11:57.989 [main] Log - Successfully logged out
+[INFO ] 2023-09-18 01:11:59.009 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:12:01.039 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:12:03.785 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:12:15.363 [main] Log - Opened Page Url
+[INFO ] 2023-09-18 01:12:19.374 [main] Log - Scenario: To verify approriate tabs are present on the Dashboard Page
+[INFO ] 2023-09-18 01:12:30.362 [main] Log - Dashboard module contains all the features
+[INFO ] 2023-09-18 01:12:31.408 [main] Log - Browser Closed
+[INFO ] 2023-09-18 01:12:34.588 [main] Log - Scenario: To verify Login behavior after 3 failed attempts
+[INFO ] 2023-09-18 01:12:34.591 [main] Log - setup for data driven invoked
+[INFO ] 2023-09-18 01:12:34.592 [main] Log - Entered Chrome browser setup
+[INFO ] 2023-09-18 01:12:36.914 [main] Log - Setup Completed
+[INFO ] 2023-09-18 01:12:47.400 [main] Log - Opened Page Url
+[ERROR] 2023-09-18 01:12:51.043 [main] Log - Expected error message for three failed attempts is not printed
+[INFO ] 2023-09-18 01:12:51.044 [main] Log - Capturing Base64 sceenshot
+[ERROR] 2023-09-18 01:12:52.874 [main] Log - Expected error message for three failed attempts is not printed
+[INFO ] 2023-09-18 01:12:52.875 [main] Log - Capturing Base64 sceenshot
+[ERROR] 2023-09-18 01:12:54.735 [main] Log - Expected error message for three failed attempts is not printed
+[INFO ] 2023-09-18 01:12:54.735 [main] Log - Capturing Base64 sceenshot
+[INFO ] 2023-09-18 01:12:55.111 [main] Log - tear down process starting
+[INFO ] 2023-09-18 01:12:57.933 [main] Log - Browser Closed

@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="29" passed="15" failed="14" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-17T20:04:55 IST" name="Suite" finished-at="2023-09-17T20:19:30 IST" duration-ms="875834">
+  <suite started-at="2023-09-18T00:55:09 IST" name="Suite" finished-at="2023-09-18T01:12:57 IST" duration-ms="1068132">
     <groups>
     </groups>
-    <test started-at="2023-09-17T20:04:55 IST" name="HrmTest1" finished-at="2023-09-17T20:19:08 IST" duration-ms="853759">
+    <test started-at="2023-09-18T00:55:09 IST" name="HrmTest1" finished-at="2023-09-18T01:12:33 IST" duration-ms="1043730">
       <class name="com.hrm.testcases.TC_005_VerifyLogoutModule">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:17:49 IST" name="setup" finished-at="2023-09-17T20:18:04 IST" duration-ms="14710" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-18T01:10:58 IST" name="setup" finished-at="2023-09-18T01:11:16 IST" duration-ms="17740" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyContentsOfTheUserProfileBtn()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:04 IST" name="verifyContentsOfTheUserProfileBtn" finished-at="2023-09-17T20:18:12 IST" duration-ms="7984" status="PASS">
+        <test-method signature="verifyContentsOfTheUserProfileBtn()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-18T01:11:16 IST" name="verifyContentsOfTheUserProfileBtn" finished-at="2023-09-18T01:11:26 IST" duration-ms="9566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyContentsOfTheUserProfileBtn -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:12 IST" name="tearDown" finished-at="2023-09-17T20:18:14 IST" duration-ms="1855" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-18T01:11:26 IST" name="tearDown" finished-at="2023-09-18T01:11:29 IST" duration-ms="2875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:14 IST" name="setup" finished-at="2023-09-17T20:18:29 IST" duration-ms="15029" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-18T01:11:29 IST" name="setup" finished-at="2023-09-18T01:11:45 IST" duration-ms="16598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLogout()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:29 IST" name="verifyLogout" finished-at="2023-09-17T20:18:40 IST" duration-ms="10785" status="PASS">
+        <test-method signature="verifyLogout()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-18T01:11:45 IST" name="verifyLogout" finished-at="2023-09-18T01:11:57 IST" duration-ms="12293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-17T20:18:40 IST" name="tearDown" finished-at="2023-09-17T20:18:42 IST" duration-ms="1684" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_005_VerifyLogoutModule@51f49060]" started-at="2023-09-18T01:11:57 IST" name="tearDown" finished-at="2023-09-18T01:12:01 IST" duration-ms="3042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_005_VerifyLogoutModule -->
       <class name="com.hrm.testcases.TC_004_FieldLevelValidations">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:14:29 IST" name="setup" finished-at="2023-09-17T20:14:45 IST" duration-ms="16257" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:06:43 IST" name="setup" finished-at="2023-09-18T01:07:03 IST" duration-ms="19502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatingAddUserWhenEmployeeNameFieldIsEmpty()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:14:45 IST" name="validatingAddUserWhenEmployeeNameFieldIsEmpty" finished-at="2023-09-17T20:15:04 IST" duration-ms="18211" status="FAIL">
+        <test-method signature="validatingAddUserWhenEmployeeNameFieldIsEmpty()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:07:03 IST" name="validatingAddUserWhenEmployeeNameFieldIsEmpty" finished-at="2023-09-18T01:07:27 IST" duration-ms="24266" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -81,15 +81,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingAddUserWhenEmployeeNameFieldIsEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:04 IST" name="tearDown" finished-at="2023-09-17T20:15:05 IST" duration-ms="1753" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:07:27 IST" name="tearDown" finished-at="2023-09-18T01:07:30 IST" duration-ms="2575" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:05 IST" name="setup" finished-at="2023-09-17T20:15:20 IST" duration-ms="15056" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:07:30 IST" name="setup" finished-at="2023-09-18T01:07:48 IST" duration-ms="18874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:20 IST" name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum" finished-at="2023-09-17T20:15:39 IST" duration-ms="18334" status="FAIL">
+        <test-method signature="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:07:48 IST" name="validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum" finished-at="2023-09-18T01:08:11 IST" duration-ms="22671" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -135,15 +135,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingAddUserWhenEmployeeNameFieldValuesAreLessThanMinimum -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:39 IST" name="tearDown" finished-at="2023-09-17T20:15:40 IST" duration-ms="1619" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:08:11 IST" name="tearDown" finished-at="2023-09-18T01:08:13 IST" duration-ms="2002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:40 IST" name="setup" finished-at="2023-09-17T20:15:56 IST" duration-ms="15542" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:08:13 IST" name="setup" finished-at="2023-09-18T01:08:33 IST" duration-ms="19709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validatingAddUserWhenUserameFieldIsEmpty()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:15:56 IST" name="validatingAddUserWhenUserameFieldIsEmpty" finished-at="2023-09-17T20:16:13 IST" duration-ms="17163" status="FAIL">
+        <test-method signature="validatingAddUserWhenUserameFieldIsEmpty()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:08:33 IST" name="validatingAddUserWhenUserameFieldIsEmpty" finished-at="2023-09-18T01:08:53 IST" duration-ms="19829" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -191,15 +191,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingAddUserWhenUserameFieldIsEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:13 IST" name="tearDown" finished-at="2023-09-17T20:16:15 IST" duration-ms="1621" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:08:53 IST" name="tearDown" finished-at="2023-09-18T01:08:55 IST" duration-ms="2211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:15 IST" name="setup" finished-at="2023-09-17T20:16:31 IST" duration-ms="16509" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:08:55 IST" name="setup" finished-at="2023-09-18T01:09:14 IST" duration-ms="18850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verfyAddUserUsernameFieldForOnlyAlphaNumeric()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:31 IST" name="verfyAddUserUsernameFieldForOnlyAlphaNumeric" finished-at="2023-09-17T20:16:50 IST" duration-ms="18641" status="FAIL">
+        <test-method signature="verfyAddUserUsernameFieldForOnlyAlphaNumeric()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:09:14 IST" name="verfyAddUserUsernameFieldForOnlyAlphaNumeric" finished-at="2023-09-18T01:09:37 IST" duration-ms="23614" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -249,15 +249,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verfyAddUserUsernameFieldForOnlyAlphaNumeric -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:50 IST" name="tearDown" finished-at="2023-09-17T20:16:52 IST" duration-ms="1611" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:09:37 IST" name="tearDown" finished-at="2023-09-18T01:09:43 IST" duration-ms="6008" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:16:52 IST" name="setup" finished-at="2023-09-17T20:17:07 IST" duration-ms="15719" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:09:43 IST" name="setup" finished-at="2023-09-18T01:10:02 IST" duration-ms="18618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAddUserUsernameFieldValueLimit()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:07 IST" name="verifyAddUserUsernameFieldValueLimit" finished-at="2023-09-17T20:17:26 IST" duration-ms="18403" status="FAIL">
+        <test-method signature="verifyAddUserUsernameFieldValueLimit()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:10:02 IST" name="verifyAddUserUsernameFieldValueLimit" finished-at="2023-09-18T01:10:27 IST" duration-ms="25320" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -311,15 +311,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddUserUsernameFieldValueLimit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:26 IST" name="tearDown" finished-at="2023-09-17T20:17:27 IST" duration-ms="1625" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:10:27 IST" name="tearDown" finished-at="2023-09-18T01:10:30 IST" duration-ms="2183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:27 IST" name="setup" finished-at="2023-09-17T20:17:43 IST" duration-ms="15444" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:10:30 IST" name="setup" finished-at="2023-09-18T01:10:49 IST" duration-ms="19771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginWithTwoWrongAttempts()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:43 IST" name="verifyLoginWithTwoWrongAttempts" finished-at="2023-09-17T20:17:48 IST" duration-ms="5071" status="FAIL">
+        <test-method signature="verifyLoginWithTwoWrongAttempts()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:10:49 IST" name="verifyLoginWithTwoWrongAttempts" finished-at="2023-09-18T01:10:56 IST" duration-ms="6829" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -375,137 +375,137 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithTwoWrongAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-17T20:17:48 IST" name="tearDown" finished-at="2023-09-17T20:17:49 IST" duration-ms="1678" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_004_FieldLevelValidations@3b366632]" started-at="2023-09-18T01:10:56 IST" name="tearDown" finished-at="2023-09-18T01:10:58 IST" duration-ms="2280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_004_FieldLevelValidations -->
       <class name="com.hrm.testcases.TC_003_VerifyAdminModule">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:11 IST" name="setup" finished-at="2023-09-17T20:06:27 IST" duration-ms="15335" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:57:08 IST" name="setup" finished-at="2023-09-18T00:57:29 IST" duration-ms="21464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteUser()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:27 IST" name="deleteUser" finished-at="2023-09-17T20:06:56 IST" duration-ms="29614" status="PASS">
+        <test-method signature="deleteUser()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:57:29 IST" name="deleteUser" finished-at="2023-09-18T00:58:01 IST" duration-ms="31948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:56 IST" name="tearDown" finished-at="2023-09-17T20:06:58 IST" duration-ms="2176" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:58:01 IST" name="tearDown" finished-at="2023-09-18T00:58:04 IST" duration-ms="2441" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:06:58 IST" name="setup" finished-at="2023-09-17T20:07:19 IST" duration-ms="20300" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:58:04 IST" name="setup" finished-at="2023-09-18T00:58:21 IST" duration-ms="17468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAdminPageContents()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:19 IST" name="verifyAdminPageContents" finished-at="2023-09-17T20:07:27 IST" duration-ms="8106" status="PASS">
+        <test-method signature="verifyAdminPageContents()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:58:21 IST" name="verifyAdminPageContents" finished-at="2023-09-18T00:58:30 IST" duration-ms="8816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdminPageContents -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:27 IST" name="tearDown" finished-at="2023-09-17T20:07:29 IST" duration-ms="2474" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:58:30 IST" name="tearDown" finished-at="2023-09-18T00:58:34 IST" duration-ms="4242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:29 IST" name="setup" finished-at="2023-09-17T20:07:45 IST" duration-ms="15396" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:58:34 IST" name="setup" finished-at="2023-09-18T00:58:54 IST" duration-ms="19660" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyResultsForStatusEnabled()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:07:45 IST" name="verifyResultsForStatusEnabled" finished-at="2023-09-17T20:08:00 IST" duration-ms="14924" status="PASS">
+        <test-method signature="verifyResultsForStatusEnabled()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:58:54 IST" name="verifyResultsForStatusEnabled" finished-at="2023-09-18T00:59:15 IST" duration-ms="20991" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResultsForStatusEnabled -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:00 IST" name="tearDown" finished-at="2023-09-17T20:08:01 IST" duration-ms="1939" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:59:15 IST" name="tearDown" finished-at="2023-09-18T00:59:18 IST" duration-ms="3072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:01 IST" name="setup" finished-at="2023-09-17T20:08:17 IST" duration-ms="15900" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:59:18 IST" name="setup" finished-at="2023-09-18T00:59:47 IST" duration-ms="28727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyResultsForStatusDisabled()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:17 IST" name="verifyResultsForStatusDisabled" finished-at="2023-09-17T20:08:34 IST" duration-ms="16468" status="PASS">
+        <test-method signature="verifyResultsForStatusDisabled()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T00:59:47 IST" name="verifyResultsForStatusDisabled" finished-at="2023-09-18T01:00:14 IST" duration-ms="27039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResultsForStatusDisabled -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:34 IST" name="tearDown" finished-at="2023-09-17T20:08:36 IST" duration-ms="1902" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:00:14 IST" name="tearDown" finished-at="2023-09-18T01:00:17 IST" duration-ms="3284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:36 IST" name="setup" finished-at="2023-09-17T20:08:56 IST" duration-ms="20262" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:00:17 IST" name="setup" finished-at="2023-09-18T01:00:35 IST" duration-ms="18226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyResultsForUserRoleESS()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:08:56 IST" name="verifyResultsForUserRoleESS" finished-at="2023-09-17T20:09:18 IST" duration-ms="21994" status="PASS">
+        <test-method signature="verifyResultsForUserRoleESS()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:00:35 IST" name="verifyResultsForUserRoleESS" finished-at="2023-09-18T01:00:53 IST" duration-ms="18175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResultsForUserRoleESS -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:18 IST" name="tearDown" finished-at="2023-09-17T20:09:21 IST" duration-ms="3195" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:00:53 IST" name="tearDown" finished-at="2023-09-18T01:00:57 IST" duration-ms="3747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:21 IST" name="setup" finished-at="2023-09-17T20:09:42 IST" duration-ms="20912" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:00:57 IST" name="setup" finished-at="2023-09-18T01:01:16 IST" duration-ms="18693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyResultsForUserRoleAdmin()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:42 IST" name="verifyResultsForUserRoleAdmin" finished-at="2023-09-17T20:09:52 IST" duration-ms="9972" status="PASS">
+        <test-method signature="verifyResultsForUserRoleAdmin()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:01:16 IST" name="verifyResultsForUserRoleAdmin" finished-at="2023-09-18T01:01:31 IST" duration-ms="15295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResultsForUserRoleAdmin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:52 IST" name="tearDown" finished-at="2023-09-17T20:09:55 IST" duration-ms="2413" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:01:31 IST" name="tearDown" finished-at="2023-09-18T01:01:34 IST" duration-ms="2708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:09:55 IST" name="setup" finished-at="2023-09-17T20:10:13 IST" duration-ms="18589" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:01:34 IST" name="setup" finished-at="2023-09-18T01:01:56 IST" duration-ms="22468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserRoleOptions()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:13 IST" name="verifyUserRoleOptions" finished-at="2023-09-17T20:10:21 IST" duration-ms="7416" status="PASS">
+        <test-method signature="verifyUserRoleOptions()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:01:56 IST" name="verifyUserRoleOptions" finished-at="2023-09-18T01:02:04 IST" duration-ms="7946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserRoleOptions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:21 IST" name="tearDown" finished-at="2023-09-17T20:10:22 IST" duration-ms="1530" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:02:04 IST" name="tearDown" finished-at="2023-09-18T01:02:10 IST" duration-ms="5742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:22 IST" name="setup" finished-at="2023-09-17T20:10:39 IST" duration-ms="16997" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:02:10 IST" name="setup" finished-at="2023-09-18T01:02:28 IST" duration-ms="18257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyStatusAfterAddingNewUser()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:39 IST" name="verifyStatusAfterAddingNewUser" finished-at="2023-09-17T20:10:57 IST" duration-ms="18388" status="PASS">
+        <test-method signature="verifyStatusAfterAddingNewUser()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:02:28 IST" name="verifyStatusAfterAddingNewUser" finished-at="2023-09-18T01:02:50 IST" duration-ms="21633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStatusAfterAddingNewUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:57 IST" name="tearDown" finished-at="2023-09-17T20:10:59 IST" duration-ms="2019" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:02:50 IST" name="tearDown" finished-at="2023-09-18T01:02:53 IST" duration-ms="3192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:10:59 IST" name="setup" finished-at="2023-09-17T20:11:19 IST" duration-ms="19558" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:02:53 IST" name="setup" finished-at="2023-09-18T01:03:10 IST" duration-ms="17065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifySearchResultWithExistingUsername()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:19 IST" name="verifySearchResultWithExistingUsername" finished-at="2023-09-17T20:11:29 IST" duration-ms="9594" status="PASS">
+        <test-method signature="verifySearchResultWithExistingUsername()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:03:10 IST" name="verifySearchResultWithExistingUsername" finished-at="2023-09-18T01:03:21 IST" duration-ms="10798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResultWithExistingUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:29 IST" name="tearDown" finished-at="2023-09-17T20:11:30 IST" duration-ms="1699" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:03:21 IST" name="tearDown" finished-at="2023-09-18T01:03:24 IST" duration-ms="2670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:30 IST" name="setup" finished-at="2023-09-17T20:11:45 IST" duration-ms="14766" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:03:24 IST" name="setup" finished-at="2023-09-18T01:03:39 IST" duration-ms="15737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyExistingEmployeeNameRecords()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:11:45 IST" name="verifyExistingEmployeeNameRecords" finished-at="2023-09-17T20:12:02 IST" duration-ms="17054" status="PASS">
+        <test-method signature="verifyExistingEmployeeNameRecords()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:03:39 IST" name="verifyExistingEmployeeNameRecords" finished-at="2023-09-18T01:03:58 IST" duration-ms="18572" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyExistingEmployeeNameRecords -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:02 IST" name="tearDown" finished-at="2023-09-17T20:12:04 IST" duration-ms="1731" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:03:58 IST" name="tearDown" finished-at="2023-09-18T01:04:01 IST" duration-ms="2583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:04 IST" name="setup" finished-at="2023-09-17T20:12:20 IST" duration-ms="15892" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:04:01 IST" name="setup" finished-at="2023-09-18T01:04:22 IST" duration-ms="21288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyNonExistingEmployeeNameRecords()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:20 IST" name="verifyNonExistingEmployeeNameRecords" finished-at="2023-09-17T20:12:30 IST" duration-ms="10368" status="FAIL">
+        <test-method signature="verifyNonExistingEmployeeNameRecords()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:04:22 IST" name="verifyNonExistingEmployeeNameRecords" finished-at="2023-09-18T01:04:34 IST" duration-ms="11923" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -549,27 +549,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNonExistingEmployeeNameRecords -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:30 IST" name="tearDown" finished-at="2023-09-17T20:12:32 IST" duration-ms="1687" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:04:34 IST" name="tearDown" finished-at="2023-09-18T01:04:36 IST" duration-ms="1946" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:32 IST" name="setup" finished-at="2023-09-17T20:12:49 IST" duration-ms="17346" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:04:36 IST" name="setup" finished-at="2023-09-18T01:04:54 IST" duration-ms="17771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyStatusContentsInDropDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:12:49 IST" name="verifyStatusContentsInDropDown" finished-at="2023-09-17T20:13:00 IST" duration-ms="10979" status="PASS">
+        <test-method signature="verifyStatusContentsInDropDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:04:54 IST" name="verifyStatusContentsInDropDown" finished-at="2023-09-18T01:05:05 IST" duration-ms="11523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyStatusContentsInDropDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:00 IST" name="tearDown" finished-at="2023-09-17T20:13:02 IST" duration-ms="1712" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:05:05 IST" name="tearDown" finished-at="2023-09-18T01:05:07 IST" duration-ms="2388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:02 IST" name="setup" finished-at="2023-09-17T20:13:21 IST" duration-ms="19406" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:05:07 IST" name="setup" finished-at="2023-09-18T01:05:24 IST" duration-ms="16665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="compareAddUserScreenshot()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:21 IST" name="compareAddUserScreenshot" finished-at="2023-09-17T20:13:37 IST" duration-ms="15398" status="FAIL">
+        <test-method signature="compareAddUserScreenshot()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:05:24 IST" name="compareAddUserScreenshot" finished-at="2023-09-18T01:05:41 IST" duration-ms="17248" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -615,15 +615,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareAddUserScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:37 IST" name="tearDown" finished-at="2023-09-17T20:13:39 IST" duration-ms="2249" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:05:41 IST" name="tearDown" finished-at="2023-09-18T01:05:43 IST" duration-ms="1943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:39 IST" name="setup" finished-at="2023-09-17T20:13:58 IST" duration-ms="18778" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:05:43 IST" name="setup" finished-at="2023-09-18T01:06:04 IST" duration-ms="20803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyByAddingNewDuplicateUsername()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:13:58 IST" name="verifyByAddingNewDuplicateUsername" finished-at="2023-09-17T20:14:28 IST" duration-ms="29809" status="FAIL">
+        <test-method signature="verifyByAddingNewDuplicateUsername()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:06:04 IST" name="verifyByAddingNewDuplicateUsername" finished-at="2023-09-18T01:06:41 IST" duration-ms="36608" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -671,17 +671,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyByAddingNewDuplicateUsername -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-17T20:14:28 IST" name="tearDown" finished-at="2023-09-17T20:14:29 IST" duration-ms="1650" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_003_VerifyAdminModule@7fb9f71f]" started-at="2023-09-18T01:06:41 IST" name="tearDown" finished-at="2023-09-18T01:06:43 IST" duration-ms="2531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_003_VerifyAdminModule -->
       <class name="com.hrm.testcases.TC_001_VerifyHomePage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-17T20:04:55 IST" name="setup" finished-at="2023-09-17T20:05:14 IST" duration-ms="19406" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-18T00:55:10 IST" name="setup" finished-at="2023-09-18T00:55:40 IST" duration-ms="30338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="compareHomePageScreenshot()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-17T20:05:14 IST" name="compareHomePageScreenshot" finished-at="2023-09-17T20:05:21 IST" duration-ms="7288" status="FAIL">
+        <test-method signature="compareHomePageScreenshot()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-18T00:55:40 IST" name="compareHomePageScreenshot" finished-at="2023-09-18T00:55:55 IST" duration-ms="14768" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -725,43 +725,43 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareHomePageScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-17T20:05:21 IST" name="tearDown" finished-at="2023-09-17T20:05:24 IST" duration-ms="2496" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_001_VerifyHomePage@3591009c]" started-at="2023-09-18T00:55:55 IST" name="tearDown" finished-at="2023-09-18T00:56:01 IST" duration-ms="6548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_001_VerifyHomePage -->
       <class name="com.hrm.testcases.TC_007_VerifyDashboardModule">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-17T20:18:42 IST" name="setup" finished-at="2023-09-17T20:18:57 IST" duration-ms="15533" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-18T01:12:01 IST" name="setup" finished-at="2023-09-18T01:12:19 IST" duration-ms="18328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDashboardPageContents()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-17T20:18:57 IST" name="verifyDashboardPageContents" finished-at="2023-09-17T20:19:07 IST" duration-ms="9480" status="PASS">
+        <test-method signature="verifyDashboardPageContents()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-18T01:12:19 IST" name="verifyDashboardPageContents" finished-at="2023-09-18T01:12:30 IST" duration-ms="10997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDashboardPageContents -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-17T20:19:07 IST" name="tearDown" finished-at="2023-09-17T20:19:08 IST" duration-ms="1829" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_007_VerifyDashboardModule@514eedd8]" started-at="2023-09-18T01:12:30 IST" name="tearDown" finished-at="2023-09-18T01:12:33 IST" duration-ms="3173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_007_VerifyDashboardModule -->
       <class name="com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:24 IST" name="setup" finished-at="2023-09-17T20:05:39 IST" duration-ms="15249" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-18T00:56:01 IST" name="setup" finished-at="2023-09-18T00:56:20 IST" duration-ms="18636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidPasswordAttempt()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:39 IST" name="invalidPasswordAttempt" finished-at="2023-09-17T20:05:42 IST" duration-ms="2783" status="PASS">
+        <test-method signature="invalidPasswordAttempt()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-18T00:56:20 IST" name="invalidPasswordAttempt" finished-at="2023-09-18T00:56:27 IST" duration-ms="7034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPasswordAttempt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:42 IST" name="tearDown" finished-at="2023-09-17T20:05:44 IST" duration-ms="1714" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-18T00:56:27 IST" name="tearDown" finished-at="2023-09-18T00:56:30 IST" duration-ms="2932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:44 IST" name="setup" finished-at="2023-09-17T20:05:59 IST" duration-ms="15420" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-18T00:56:30 IST" name="setup" finished-at="2023-09-18T00:56:47 IST" duration-ms="16728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validPasswordAttempt()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:05:59 IST" name="validPasswordAttempt" finished-at="2023-09-17T20:06:08 IST" duration-ms="9401" status="FAIL">
+        <test-method signature="validPasswordAttempt()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-18T00:56:47 IST" name="validPasswordAttempt" finished-at="2023-09-18T00:57:03 IST" duration-ms="16010" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -805,19 +805,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validPasswordAttempt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-17T20:06:08 IST" name="tearDown" finished-at="2023-09-17T20:06:11 IST" duration-ms="2729" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials@410954b]" started-at="2023-09-18T00:57:03 IST" name="tearDown" finished-at="2023-09-18T00:57:08 IST" duration-ms="5123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrm.testcases.TC_002_VerifyHomeLoginWithCredentials -->
     </test> <!-- HrmTest1 -->
-    <test started-at="2023-09-17T20:19:09 IST" name="HrmTest2" finished-at="2023-09-17T20:19:30 IST" duration-ms="21601">
+    <test started-at="2023-09-18T01:12:34 IST" name="HrmTest2" finished-at="2023-09-18T01:12:57 IST" duration-ms="23370">
       <class name="com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts">
-        <test-method is-config="true" signature="setupBeforeTest()[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:09 IST" name="setupBeforeTest" finished-at="2023-09-17T20:19:23 IST" duration-ms="14021" status="PASS">
+        <test-method is-config="true" signature="setupBeforeTest()[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-18T01:12:34 IST" name="setupBeforeTest" finished-at="2023-09-18T01:12:49 IST" duration-ms="14834" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBeforeTest -->
-        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:23 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-17T20:19:24 IST" duration-ms="1619" status="FAIL">
+        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-18T01:12:49 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-18T01:12:51 IST" duration-ms="2073" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -873,7 +873,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithThreeWrongAttempts -->
-        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:24 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-17T20:19:26 IST" duration-ms="1665" status="FAIL">
+        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-18T01:12:51 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-18T01:12:53 IST" duration-ms="1799" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -931,7 +931,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithThreeWrongAttempts -->
-        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:26 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-17T20:19:28 IST" duration-ms="1624" status="FAIL">
+        <test-method signature="verifyLoginWithThreeWrongAttempts(java.lang.String,java.lang.String)[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-18T01:12:53 IST" name="verifyLoginWithThreeWrongAttempts" data-provider="multiple-user-credentials" finished-at="2023-09-18T01:12:55 IST" duration-ms="1796" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -991,7 +991,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithThreeWrongAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-17T20:19:28 IST" name="tearDown" finished-at="2023-09-17T20:19:30 IST" duration-ms="2653" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrm.testcases.TC_006_DataDrivenTestingFor3FailedAttempts@16afbd92]" started-at="2023-09-18T01:12:55 IST" name="tearDown" finished-at="2023-09-18T01:12:57 IST" duration-ms="2835" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
